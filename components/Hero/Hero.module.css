@@ -57,6 +57,8 @@
 }
 
 .scroll {
+  width: 4rem;
+  height: 4rem;
   margin-left: 0.9rem;
   animation-name: mymove;
   animation-iteration-count: infinite;

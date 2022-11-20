@@ -26,12 +26,12 @@ const Hero = () => {
       </div>
 
       <div className={styles.menu}>
-        <h3>Menu</h3>
+        {/* <h3>Scroll</h3> */}
         <Image
           className={styles.scroll}
           alt="scroll-button"
           src={scrollImg}
-          width="2rem"
+          width="rem"
         />
       </div>
     </div>
