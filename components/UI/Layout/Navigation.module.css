@@ -38,3 +38,22 @@
   border-radius: 30px;
   padding: 0.5rem 2.5rem;
 }
+
+@media (max-width: 1000px) {
+  .nav {
+    padding: 0 7%;
+  }
+
+  .nav ul {
+    gap: 2rem;
+  }
+  .nav ul a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .nav ul {
+    display: none;
+  }
+}
