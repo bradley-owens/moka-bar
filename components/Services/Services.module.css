@@ -1,1 +1,11 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: antiquewhite;
+}
 
+.main {
+  /* background-color: #51d2cb;
+  height: 80vh;
+  width: 100vw; */
+}
