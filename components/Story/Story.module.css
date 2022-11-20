@@ -36,7 +36,7 @@
 
 @keyframes x {
   100% {
-    transform: translateX(calc(100vw - 400px));
+    transform: translateX(calc(50vw - 400px));
   }
 }
 
@@ -60,7 +60,6 @@
 
 .header {
   width: 100%;
-  /* border-radius: 30px; */
   display: flex;
   align-items: flex-end;
   justify-content: right;

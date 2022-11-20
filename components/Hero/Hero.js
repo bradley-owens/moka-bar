@@ -1,6 +1,6 @@
 import heroImg from "../../public/1.png";
 import logo from "../../public/4.png";
-import scrollImg from "../../public/scrollDown.png";
+import scrollImg from "../../public/scroll.png";
 import Image from "next/image";
 import styles from "./Hero.module.css";
 
@@ -26,7 +26,6 @@ const Hero = () => {
       </div>
 
       <div className={styles.menu}>
-        {/* <h3>Scroll</h3> */}
         <Image
           className={styles.scroll}
           alt="scroll-button"
