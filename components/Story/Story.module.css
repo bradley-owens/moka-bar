@@ -5,7 +5,7 @@
 }
 
 .x {
-  margin-top: 15rem;
+  margin-top: 19rem;
   position: absolute;
   z-index: -999;
   background-color: rgba(255, 0, 0, 0.223);
@@ -20,7 +20,7 @@
 }
 
 .y {
-  margin-top: -5rem;
+  margin-top: -10rem;
   position: absolute;
   z-index: -999;
   background-color: rgba(255, 0, 0, 0.223);

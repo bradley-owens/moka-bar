@@ -1,4 +1,5 @@
 import Hero from "../components/Hero/Hero";
+import Services from "../components/Services/Services";
 import Story from "../components/Story/Story";
 import Layout from "../components/UI/Layout/Layout";
 
@@ -7,6 +8,7 @@ export default function Home() {
     <Layout>
       <Hero />
       <Story />
+      <Services />
     </Layout>
   );
 }
