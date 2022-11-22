@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  gap: 7rem;
+  gap: 5rem;
   z-index: 1000;
 }
 
@@ -53,8 +53,8 @@
 
 .x {
   position: absolute;
-  top: 0rem;
-  left: 3rem;
+  top: 2rem;
+  left: 9rem;
   margin-top: 18rem;
   position: absolute;
   z-index: -999;
@@ -62,7 +62,7 @@
   width: 20rem;
   height: 20rem;
   border-radius: 200px;
-  animation: x 50s linear infinite alternate;
+  /* animation: x 50s linear infinite alternate; */
 }
 
 .x p {
@@ -71,8 +71,8 @@
 
 .y {
   position: absolute;
-  top: 18rem;
-  left: 3rem;
+  top: 25rem;
+  left: -2rem;
   margin-top: -30rem;
   position: absolute;
   z-index: -999;
@@ -80,7 +80,7 @@
   width: 20rem;
   height: 20rem;
   border-radius: 200px;
-  animation: y 20s linear infinite alternate;
+  /* animation: y 20s linear infinite alternate; */
 }
 
 .y p {

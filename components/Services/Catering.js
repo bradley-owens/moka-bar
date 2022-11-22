@@ -1,6 +1,6 @@
 import Image from "next/image";
-import img1 from "../../public/service1.png";
-import img2 from "../../public/service2.png";
+import img1 from "../../public/catering1.png";
+import img2 from "../../public/catering2.png";
 import styles from "./Catering.module.css";
 
 const Catering = () => {
@@ -16,13 +16,13 @@ const Catering = () => {
       <div className={styles.main}>
         <Image
           className={styles.img1}
-          src={img1}
+          src={img2}
           alt="service-img1"
           width="1rem"
         />
         <Image
           className={styles.img2}
-          src={img2}
+          src={img1}
           alt="service-img2"
           width="1rem"
         />
