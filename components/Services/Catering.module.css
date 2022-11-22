@@ -7,24 +7,37 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .service h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 800;
   color: white;
   background-color: #51d2cc;
-  /* background-color: rgba(255, 0, 0, 0.214); */
+
   border-radius: 100px;
   width: fit-content;
   padding: 1.7rem;
 }
 
+.main button {
+  position: absolute;
+  bottom: -6rem;
+  left: 1rem;
+  background-color: rgba(255, 0, 0, 0.414);
+  border: none;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-weight: 700;
+  border-radius: 40px;
+  font-size: 1.5rem;
+}
+
 .info {
   font-size: 2rem;
   background-color: #51d2cc;
-  /* background-color: rgba(255, 0, 0, 0.214); */
+
   color: white;
   width: 500px;
   padding: 1.5rem;

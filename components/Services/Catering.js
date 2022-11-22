@@ -32,6 +32,7 @@ const Catering = () => {
             job, friends or family!
           </p>
         </div>
+        <button>See more!</button>
       </div>
     </div>
   );

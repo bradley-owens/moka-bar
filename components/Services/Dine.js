@@ -32,6 +32,7 @@ const Dine = () => {
             made delicacies
           </p>
         </div>
+        <button>See more!</button>
       </div>
     </div>
   );
