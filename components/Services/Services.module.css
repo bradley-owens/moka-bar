@@ -38,10 +38,10 @@
   }
 }
 
-@media (max-width: 764px) {
+@media (max-width: 769px) {
   .container {
-    margin: -8rem auto;
-    gap: 4rem;
+    margin: -1rem auto;
+    gap: 7rem;
   }
 }
 
