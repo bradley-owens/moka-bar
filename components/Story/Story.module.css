@@ -1,16 +1,17 @@
 .container {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
-  padding: 6rem 0;
+  margin-top: 23rem;
+  /* background-color: antiquewhite; */
 }
 
 .x {
-  margin-top: 19rem;
+  margin-top: -16rem;
   position: absolute;
   z-index: -999;
   background-color: rgba(255, 0, 0, 0.223);
-  width: 25rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   border-radius: 200px;
   animation: x 20s linear infinite alternate;
 }
@@ -20,12 +21,12 @@
 }
 
 .y {
-  margin-top: -10rem;
+  margin-top: 18rem;
   position: absolute;
   z-index: -999;
   background-color: rgba(255, 0, 0, 0.223);
-  width: 25rem;
-  height: 25rem;
+  width: 23rem;
+  height: 23rem;
   border-radius: 200px;
   animation: y 15s linear infinite alternate;
 }
@@ -50,7 +51,7 @@
   z-index: 999;
   background-color: #51d2cc;
   width: 70%;
-  margin: 3rem auto;
+  margin: 0 auto;
   color: white;
   padding: 2rem;
   border-radius: 40px;
@@ -90,22 +91,6 @@
   border-radius: 30px;
 }
 
-@media (max-width: 1400px) {
-  .x {
-    margin-top: 23rem;
-    width: 20rem;
-    height: 20rem;
-    animation: x 20s linear infinite alternate;
-  }
-
-  .y {
-    margin-top: -7rem;
-    width: 20rem;
-    height: 20rem;
-    animation: y 15s linear infinite alternate;
-  }
-}
-
 @media (max-width: 1100px) {
   .body {
     font-size: 1.3rem;
@@ -120,6 +105,33 @@
   .body {
     font-size: 1.2rem;
     line-height: 1.4;
+  }
+
+  .x {
+    margin-top: -12rem;
+    width: 20rem;
+    height: 20rem;
+
+    animation: x 10s linear infinite alternate;
+  }
+
+  .y {
+    margin-top: 18rem;
+    width: 20rem;
+    height: 20rem;
+    animation: y 15s linear infinite alternate;
+  }
+
+  @keyframes x {
+    100% {
+      transform: translateX(calc(100vw - 400px));
+    }
+  }
+
+  @keyframes y {
+    100% {
+      transform: translateX(calc(100vw - 400px));
+    }
   }
 }
 
@@ -138,14 +150,14 @@
   }
 
   .x {
-    margin-top: 19rem;
+    margin-top: 15rem;
     width: 18rem;
     height: 18rem;
-    animation: x 20s linear infinite alternate;
+    animation: x 10s linear infinite alternate;
   }
 
   .y {
-    margin-top: -5rem;
+    margin-top: -8rem;
     width: 18rem;
     height: 18rem;
     animation: y 15s linear infinite alternate;
@@ -153,7 +165,7 @@
 
   @keyframes x {
     100% {
-      transform: translateX(calc(50vw - 10px));
+      transform: translateX(calc(100vw - 400px));
     }
   }
 
@@ -173,6 +185,20 @@
     font-size: 1.3rem;
     padding: 1.2rem;
   }
+
+  .x {
+    margin-top: 16rem;
+    width: 14rem;
+    height: 14rem;
+    animation: x 20s linear infinite alternate;
+  }
+
+  .y {
+    margin-top: -9rem;
+    width: 14rem;
+    height: 14rem;
+    animation: y 15s linear infinite alternate;
+  }
 }
 
 @media (max-width: 600px) {
@@ -188,6 +214,17 @@
     font-size: 1.2rem;
     padding: 1.1rem;
   }
+  @keyframes x {
+    100% {
+      transform: translateX(calc(100vw - 20vw));
+    }
+  }
+
+  @keyframes y {
+    100% {
+      transform: translateX(calc(100vw - 20vw));
+    }
+  }
 }
 
 @media (max-width: 500px) {
@@ -202,17 +239,17 @@
   }
 
   .x {
-    margin-top: 20rem;
-    width: 15rem;
-    height: 15rem;
-    animation: x 18s linear infinite alternate;
+    margin-top: 16rem;
+    width: 10rem;
+    height: 10rem;
+    animation: x 10s linear infinite alternate;
   }
 
   .y {
-    margin-top: -5rem;
-    width: 15rem;
-    height: 15rem;
-    animation: y 12s linear infinite alternate;
+    margin-top: -7rem;
+    width: 10rem;
+    height: 10rem;
+    animation: y 15s linear infinite alternate;
   }
 }
 
@@ -227,19 +264,18 @@
     padding: 0.8rem;
     line-height: 1.2;
   }
-
   .x {
-    margin-top: 16rem;
-    width: 15rem;
-    height: 15rem;
-    animation: x 18s linear infinite alternate;
+    margin-top: 13rem;
+    width: 10rem;
+    height: 10rem;
+    animation: x 10s linear infinite alternate;
   }
 
   .y {
-    margin-top: -5rem;
-    width: 15rem;
-    height: 15rem;
-    animation: y 12s linear infinite alternate;
+    margin-top: -6rem;
+    width: 10rem;
+    height: 10rem;
+    animation: y 4s linear infinite alternate;
   }
 }
 
@@ -256,17 +292,17 @@
   }
 
   .x {
-    margin-top: 16rem;
-    width: 14rem;
-    height: 14rem;
-    animation: x 18s linear infinite alternate;
+    margin-top: 13rem;
+    width: 10rem;
+    height: 10rem;
+    animation: x 10s linear infinite alternate;
   }
 
   .y {
-    margin-top: -5rem;
-    width: 14rem;
-    height: 14rem;
-    animation: y 12s linear infinite alternate;
+    margin-top: -7rem;
+    width: 10rem;
+    height: 10rem;
+    animation: y 15s linear infinite alternate;
   }
 }
 
@@ -283,15 +319,15 @@
 
   .x {
     margin-top: 16rem;
-    width: 11rem;
-    height: 11rem;
-    animation: x 18s linear infinite alternate;
+    width: 10rem;
+    height: 10rem;
+    animation: x 10s linear infinite alternate;
   }
 
   .y {
-    margin-top: -2rem;
-    width: 11rem;
-    height: 11rem;
-    animation: y 12s linear infinite alternate;
+    margin-top: -7rem;
+    width: 10rem;
+    height: 10rem;
+    animation: y 15s linear infinite alternate;
   }
 }
