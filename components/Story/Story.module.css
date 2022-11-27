@@ -1,7 +1,10 @@
 .container {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
-  margin-top: 23rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* background-color: antiquewhite; */
 }
 
@@ -28,7 +31,7 @@
   width: 23rem;
   height: 23rem;
   border-radius: 200px;
-  animation: y 15s linear infinite alternate;
+  animation: y 12s linear infinite alternate;
 }
 
 .y p {
@@ -37,13 +40,13 @@
 
 @keyframes x {
   100% {
-    transform: translateX(calc(50vw - 400px));
+    transform: translateX(calc(35vw));
   }
 }
 
 @keyframes y {
   100% {
-    transform: translateX(calc(100vw - 400px));
+    transform: translateX(calc(-35vw));
   }
 }
 
@@ -96,6 +99,18 @@
     font-size: 1.3rem;
     line-height: 1.5;
   }
+
+  @keyframes x {
+    100% {
+      transform: translateX(calc(30vw));
+    }
+  }
+
+  @keyframes y {
+    100% {
+      transform: translateX(calc(-30vw));
+    }
+  }
 }
 
 @media (max-width: 970px) {
@@ -121,16 +136,15 @@
     height: 20rem;
     animation: y 15s linear infinite alternate;
   }
-
   @keyframes x {
     100% {
-      transform: translateX(calc(100vw - 400px));
+      transform: translateX(calc(35vw));
     }
   }
 
   @keyframes y {
     100% {
-      transform: translateX(calc(100vw - 400px));
+      transform: translateX(calc(-35vw));
     }
   }
 }
@@ -150,14 +164,14 @@
   }
 
   .x {
-    margin-top: 15rem;
+    margin-top: 19rem;
     width: 18rem;
     height: 18rem;
     animation: x 10s linear infinite alternate;
   }
 
   .y {
-    margin-top: -8rem;
+    margin-top: -19rem;
     width: 18rem;
     height: 18rem;
     animation: y 15s linear infinite alternate;
@@ -165,18 +179,18 @@
 
   @keyframes x {
     100% {
-      transform: translateX(calc(100vw - 400px));
+      transform: translateX(calc(35vw));
     }
   }
 
   @keyframes y {
     100% {
-      transform: translateX(calc(100vw - 400px));
+      transform: translateX(calc(-35vw));
     }
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 769px) {
   .header h1 {
     font-size: 2.5rem;
     margin-right: 3rem;
@@ -187,14 +201,14 @@
   }
 
   .x {
-    margin-top: 16rem;
+    margin-top: 20rem;
     width: 14rem;
     height: 14rem;
     animation: x 20s linear infinite alternate;
   }
 
   .y {
-    margin-top: -9rem;
+    margin-top: -20rem;
     width: 14rem;
     height: 14rem;
     animation: y 15s linear infinite alternate;
@@ -216,13 +230,13 @@
   }
   @keyframes x {
     100% {
-      transform: translateX(calc(100vw - 20vw));
+      transform: translateX(calc(35vw));
     }
   }
 
   @keyframes y {
     100% {
-      transform: translateX(calc(100vw - 20vw));
+      transform: translateX(calc(-35vw));
     }
   }
 }
@@ -265,17 +279,17 @@
     line-height: 1.2;
   }
   .x {
-    margin-top: 13rem;
+    margin-top: 21rem;
     width: 10rem;
     height: 10rem;
     animation: x 10s linear infinite alternate;
   }
 
   .y {
-    margin-top: -6rem;
+    margin-top: -21rem;
     width: 10rem;
     height: 10rem;
-    animation: y 4s linear infinite alternate;
+    animation: y 8s linear infinite alternate;
   }
 }
 
@@ -292,14 +306,14 @@
   }
 
   .x {
-    margin-top: 13rem;
+    margin-top: 21rem;
     width: 10rem;
     height: 10rem;
     animation: x 10s linear infinite alternate;
   }
 
   .y {
-    margin-top: -7rem;
+    margin-top: -21rem;
     width: 10rem;
     height: 10rem;
     animation: y 15s linear infinite alternate;
@@ -318,16 +332,28 @@
   }
 
   .x {
-    margin-top: 16rem;
-    width: 10rem;
-    height: 10rem;
+    margin-top: 22rem;
+    width: 8rem;
+    height: 8rem;
     animation: x 10s linear infinite alternate;
   }
 
   .y {
-    margin-top: -7rem;
-    width: 10rem;
-    height: 10rem;
+    margin-top: -22rem;
+    width: 8rem;
+    height: 8rem;
     animation: y 15s linear infinite alternate;
+  }
+
+  @keyframes x {
+    100% {
+      transform: translateX(calc(32vw));
+    }
+  }
+
+  @keyframes y {
+    100% {
+      transform: translateX(calc(-32vw));
+    }
   }
 }

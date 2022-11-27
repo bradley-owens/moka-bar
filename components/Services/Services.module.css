@@ -1,67 +1,57 @@
 .container {
   width: 100%;
   height: 200vh;
-  margin: 10rem auto;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 25rem;
-
-  /* background-color: antiquewhite; */
+  /* background-color: blueviolet; */
 }
 
 @media (max-width: 1210px) {
   .container {
-    margin: 6rem auto;
     gap: 20rem;
   }
 }
 
 @media (max-width: 1100px) {
   .container {
-    margin: 6rem auto;
     gap: 15rem;
   }
 }
 
 @media (max-width: 979px) {
   .container {
-    margin: 6rem auto;
     gap: 12rem;
   }
 }
 
 @media (max-width: 859px) {
   .container {
-    margin: -8rem auto;
     gap: 7rem;
   }
 }
 
 @media (max-width: 769px) {
   .container {
-    margin: -1rem auto;
     gap: 6rem;
   }
 }
 
 @media (max-width: 629px) {
   .container {
-    margin: -8rem auto;
     gap: 4rem;
   }
 }
 
 @media (max-width: 589px) {
   .container {
-    margin: 0rem auto;
     gap: 10rem;
   }
 }
 
 @media (max-width: 322px) {
   .container {
-    margin: 2rem auto;
     gap: 13rem;
   }
 }
