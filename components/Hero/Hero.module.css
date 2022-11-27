@@ -277,23 +277,23 @@
 
 @media (max-width: 380px) {
   .hero-img {
-    left: -2rem;
-    bottom: -4rem;
-    width: 39rem;
-    height: 37rem;
+    left: 0rem;
+    bottom: 9rem;
+    width: 27rem;
+    height: 24rem;
   }
 
   .hero-logo {
-    right: 2rem;
+    right: 3.5rem;
     top: 5rem;
-    width: 19rem;
-    height: 4.5rem;
+    width: 17rem;
+    height: 5rem;
     padding-bottom: 1rem;
   }
 
   .menu {
-    right: 7rem;
-    top: 34rem;
+    right: 9.5rem;
+    top: 36rem;
   }
 }
 
