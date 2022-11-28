@@ -294,6 +294,9 @@
 }
 
 @media (max-width: 380px) {
+  .container {
+    height: 80vh;
+  }
   .header h1 {
     font-size: 1.8rem;
     margin-right: 0rem;

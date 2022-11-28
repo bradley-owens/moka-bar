@@ -1,7 +1,7 @@
 .service {
   position: relative;
   margin: 2rem auto;
-  width: 90%;
+  width: 85%;
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -37,9 +37,7 @@
 .info {
   font-size: 2rem;
   background-color: rgba(255, 0, 0, 0.414);
-  /* background-color: #51d2cc; */
   font-weight: 600;
-
   color: white;
   width: 500px;
   padding: 1.5rem;
@@ -50,30 +48,32 @@
 .img1 {
   position: absolute;
   z-index: 999;
-  top: 2rem;
-  left: 10rem;
+  top: 0rem;
+  left: 13rem;
   width: 19rem;
+  height: 19rem;
   border-radius: 40px;
 }
 .img2 {
   z-index: -999;
   position: absolute;
-  top: 12rem;
+  top: 10rem;
   left: 0rem;
   width: 19rem;
+  height: 19rem;
   border-radius: 40px;
 }
 
 .x {
   position: absolute;
-  top: 2rem;
-  left: 9rem;
+  top: -3rem;
+  left: 15rem;
   margin-top: 18rem;
   position: absolute;
   z-index: -999;
   background-color: rgba(81, 210, 204, 0.53);
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 200px;
 }
 
@@ -83,14 +83,14 @@
 
 .y {
   position: absolute;
-  top: 25rem;
-  left: -2rem;
-  margin-top: -30rem;
+  top: 21rem;
+  left: 0rem;
+  margin-top: -24rem;
   position: absolute;
   z-index: -999;
   background-color: rgba(81, 210, 204, 0.53);
-  width: 20rem;
-  height: 20rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 200px;
 }
 
@@ -124,32 +124,31 @@
   }
 
   .img1 {
-    top: 2rem;
-    left: 10rem;
-    width: 16rem;
-    height: 16rem;
+    top: 0rem;
+    left: 11rem;
+    width: 17rem;
+    height: 17rem;
   }
   .img2 {
-    top: 12rem;
+    top: 10rem;
     left: 0rem;
-    width: 16rem;
-    height: 16rem;
+    width: 17rem;
+    height: 17rem;
   }
 
   .x {
-    top: -3rem;
-    left: 9rem;
-    margin-top: 18rem;
-    width: 17rem;
-    height: 17rem;
+    top: -4rem;
+    left: 13rem;
+    width: 16rem;
+    height: 16rem;
   }
 
   .y {
-    top: 25rem;
-    left: -2rem;
-    margin-top: -26rem;
-    width: 17rem;
-    height: 17rem;
+    top: 22rem;
+    left: -1rem;
+    margin-top: -24rem;
+    width: 16rem;
+    height: 16rem;
   }
 }
 
