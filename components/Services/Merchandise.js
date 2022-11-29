@@ -20,6 +20,7 @@ const Merchandise = () => {
             Thats right we're with Green Caffeine! Stop in and grab a coffee
             with a GC resuseable mug.
           </p>
+          <button>See more</button>
         </div>
         <div className={styles.card}>
           <Image
@@ -33,6 +34,7 @@ const Merchandise = () => {
             Love our coffee? Why stop there? We offer bags of our delicious
             beans right here at Moka Bar.
           </p>
+          <button>See more</button>
         </div>
       </div>
     </div>

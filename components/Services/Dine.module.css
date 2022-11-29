@@ -53,6 +53,10 @@
   width: 19rem;
   height: 19rem;
   border-radius: 40px;
+  border: 4px solid white;
+
+  box-shadow: rgba(14, 30, 37, 0.32) 0px 4px 6px 0px,
+    rgba(14, 30, 37, 0.32) 0px 4px 18px 0px;
 }
 .img2 {
   z-index: -999;
@@ -62,6 +66,9 @@
   width: 19rem;
   height: 19rem;
   border-radius: 40px;
+  border: 4px solid white;
+  box-shadow: rgba(14, 30, 37, 0.32) 0px 4px 6px 0px,
+    rgba(14, 30, 37, 0.32) 0px 4px 18px 0px;
 }
 
 .x {
@@ -75,6 +82,8 @@
   width: 18rem;
   height: 18rem;
   border-radius: 200px;
+  /* box-shadow: rgba(14, 30, 37, 0.32) 0px 4px 6px 0px,
+    rgba(14, 30, 37, 0.32) 0px 4px 18px 0px; */
 }
 
 .x p {
@@ -92,6 +101,8 @@
   width: 18rem;
   height: 18rem;
   border-radius: 200px;
+  /* box-shadow: rgba(14, 30, 37, 0.32) 0px 4px 6px 0px,
+    rgba(14, 30, 37, 0.32) 0px 4px 18px 0px; */
 }
 
 .y p {
