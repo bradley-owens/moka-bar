@@ -194,15 +194,15 @@
 
   .hero-logo {
     right: 6rem;
-    top: 4.5rem;
+    top: 6rem;
     width: 30rem;
-    height: 7rem;
+    height: 6rem;
     padding-bottom: 1rem;
   }
 
   .menu {
-    right: 4rem;
-    top: 30rem;
+    right: 7rem;
+    top: 35rem;
   }
 
   .scroll {
@@ -220,7 +220,7 @@
 
   .hero-logo {
     right: 6rem;
-    top: 5rem;
+    top: 6rem;
     width: 27rem;
     height: 6rem;
     padding-bottom: 1rem;
@@ -235,14 +235,14 @@
 @media (max-width: 550px) {
   .hero-img {
     left: -4rem;
-    bottom: -7rem;
-    width: 38rem;
-    height: 38rem;
+    bottom: -5rem;
+    width: 33rem;
+    height: 33rem;
   }
 
   .hero-logo {
     right: 3rem;
-    top: 5rem;
+    top: 8rem;
     width: 24rem;
     height: 6rem;
     padding-bottom: 1rem;
@@ -256,66 +256,88 @@
 
 @media (max-width: 450px) {
   .hero-img {
-    left: -2rem;
-    bottom: -7rem;
-    width: 39rem;
-    height: 39rem;
+    left: 2rem;
+    bottom: 5rem;
+    width: 24rem;
+    height: 24rem;
   }
 
   .hero-logo {
-    right: 2rem;
-    top: 5rem;
+    right: 4rem;
+    top: 8rem;
     width: 21rem;
     height: 5rem;
     padding-bottom: 1rem;
   }
 
   .menu {
-    right: 7rem;
-    top: 34rem;
+    right: 12rem;
+    top: 38.5rem;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 425px) {
   .hero-img {
-    left: 0rem;
-    bottom: 9rem;
-    width: 27rem;
+    left: 1rem;
+    bottom: 5rem;
+    width: 24rem;
     height: 24rem;
   }
 
   .hero-logo {
-    right: 3.5rem;
-    top: 5rem;
-    width: 17rem;
+    right: 3rem;
+    top: 8rem;
+    width: 21rem;
     height: 5rem;
     padding-bottom: 1rem;
   }
 
   .menu {
-    right: 9.5rem;
-    top: 36rem;
+    right: 11rem;
+    top: 38.5rem;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   .hero-img {
-    left: 0rem;
-    bottom: 9rem;
-    width: 30rem;
-    height: 24rem;
+    left: 0.5rem;
+    bottom: 4rem;
+    width: 23rem;
+    height: 25rem;
   }
 
   .hero-logo {
     right: 1.5rem;
-    top: 5rem;
-    width: 17rem;
+    top: 8rem;
+    width: 20rem;
     height: 5rem;
     padding-bottom: 1rem;
   }
 
   .menu {
-    right: 8rem;
-    top: 36rem;
+    right: 9rem;
+    top: 39rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-img {
+    left: 0.5rem;
+    bottom: 1rem;
+    width: 23rem;
+    height: 25rem;
+  }
+
+  .hero-logo {
+    right: -0.5rem;
+    top: 9rem;
+    width: 18rem;
+    height: 6rem;
+    padding-bottom: 1rem;
+  }
+
+  .menu {
+    right: 6.5rem;
+    top: 44rem;
   }
 }
