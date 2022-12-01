@@ -3,37 +3,60 @@ import logo from "../../public/4.png";
 import scrollImg from "../../public/scroll.png";
 import Image from "next/image";
 import styles from "./Hero.module.css";
+import { motion } from "framer-motion";
+import { Fragment } from "react";
 
 const Hero = () => {
   return (
-    <div className={styles.main}>
-      <Image
-        className={styles["hero-img"]}
-        src={heroImg}
-        alt="hero-img"
-        width="10rem"
-      />
-
-      <Image
-        className={styles["hero-logo"]}
-        src={logo}
-        alt="hero-logo"
-        width="5rem"
-      />
-      <div className={styles.info}>
-        <h2>52 Picton Crescent, Narangba</h2>
-        <h2>0428-835-477</h2>
-      </div>
-
-      <div className={styles.menu}>
+    <Fragment>
+      <div className={styles.main}>
         <Image
-          className={styles.scroll}
-          alt="scroll-button"
-          src={scrollImg}
-          width="rem"
+          className={styles["hero-img"]}
+          src={heroImg}
+          alt="hero-img"
+          width="10rem"
         />
+
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.3,
+              },
+            },
+          }}
+        >
+          <Image
+            className={styles["hero-logo"]}
+            src={logo}
+            alt="hero-logo"
+            width="5rem"
+          />
+
+          <div className={styles.info}>
+            <h2>52 Picton Crescent, Narangba</h2>
+            <h2>0428-835-477</h2>
+          </div>
+
+          <div className={styles.menu}>
+            <Image
+              className={styles.scroll}
+              alt="scroll-button"
+              src={scrollImg}
+              width="rem"
+            />
+          </div>
+        </motion.div>
       </div>
-    </div>
+    </Fragment>
   );
 };
 
