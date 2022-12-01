@@ -16,7 +16,7 @@
   width: 23rem;
   height: 23rem;
   border-radius: 200px;
-  animation: x 20s linear infinite alternate;
+  animation: x 15s linear infinite alternate;
 }
 
 .x p {
@@ -31,7 +31,7 @@
   width: 23rem;
   height: 23rem;
   border-radius: 200px;
-  animation: y 12s linear infinite alternate;
+  animation: y 9s linear infinite alternate;
 }
 
 .y p {

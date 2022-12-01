@@ -17,44 +17,26 @@ const Hero = () => {
           width="10rem"
         />
 
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: {
-              scale: 0.8,
-              opacity: 0,
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              transition: {
-                delay: 0.3,
-              },
-            },
-          }}
-        >
+        <Image
+          className={styles["hero-logo"]}
+          src={logo}
+          alt="hero-logo"
+          width="5rem"
+        />
+
+        <div className={styles.info}>
+          <h2>52 Picton Crescent, Narangba</h2>
+          <h2>0428-835-477</h2>
+        </div>
+
+        <div className={styles.menu}>
           <Image
-            className={styles["hero-logo"]}
-            src={logo}
-            alt="hero-logo"
-            width="5rem"
+            className={styles.scroll}
+            alt="scroll-button"
+            src={scrollImg}
+            width="rem"
           />
-
-          <div className={styles.info}>
-            <h2>52 Picton Crescent, Narangba</h2>
-            <h2>0428-835-477</h2>
-          </div>
-
-          <div className={styles.menu}>
-            <Image
-              className={styles.scroll}
-              alt="scroll-button"
-              src={scrollImg}
-              width="rem"
-            />
-          </div>
-        </motion.div>
+        </div>
       </div>
     </Fragment>
   );

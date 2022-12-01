@@ -5,11 +5,28 @@ import styles from "./Dine.module.css";
 import { animate, motion } from "framer-motion";
 
 const Dine = () => {
+  const animationStyles = {
+    hidden: {
+      x: 50,
+      scale: 0.8,
+      opacity: 0,
+    },
+    visible: {
+      x: -50,
+      scale: 1,
+      opacity: 1,
+      transition: {
+        delay: 0.3,
+      },
+    },
+  };
+
   return (
     <div className={styles.service}>
       <div className={styles.x}>
         <p> background-circle</p>
       </div>
+
       <div className={styles.y}>
         <p> background-circle</p>
       </div>
@@ -17,21 +34,7 @@ const Dine = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        variants={{
-          hidden: {
-            x: 50,
-            scale: 0.8,
-            opacity: 0,
-          },
-          visible: {
-            x: -50,
-            scale: 1,
-            opacity: 1,
-            transition: {
-              delay: 0.3,
-            },
-          },
-        }}
+        variants={animationStyles}
       >
         <h1>Come Dine With Us</h1>
       </motion.div>
@@ -52,21 +55,7 @@ const Dine = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          variants={{
-            hidden: {
-              x: 50,
-              scale: 0.8,
-              opacity: 0,
-            },
-            visible: {
-              x: -50,
-              scale: 1,
-              opacity: 1,
-              transition: {
-                delay: 0.2,
-              },
-            },
-          }}
+          variants={animationStyles}
         >
           <div className={styles.info}>
             <p>
@@ -74,6 +63,13 @@ const Dine = () => {
               made delicacies
             </p>
           </div>
+        </motion.div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={animationStyles}
+        >
           <button>See Menu!</button>
         </motion.div>
       </div>
