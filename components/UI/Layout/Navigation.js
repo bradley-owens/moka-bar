@@ -3,11 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./Navigation.module.css";
 import { motion } from "framer-motion";
+import useDeviceSize from "../../Hooks/useDeviceSize";
 
 const Navigation = () => {
+  const [width] = useDeviceSize();
+
+  console.log(width);
   return (
     <nav className={styles.nav}>
-      <Image className={styles.logo} src={logoImg} width="4rem" alt="logo" />
+      {/* <Image className={styles.logo} src={logoImg} width="4rem" alt="logo" /> */}
+      <h1>Moka Bar</h1>
 
       <ul>
         <li>
@@ -23,15 +28,19 @@ const Navigation = () => {
           <Link href="/">Contact</Link>
         </li>
       </ul>
-      {/* <motion.a
-        whileHover={{ scale: 1.1 }}
-        onHoverStart={(e) => {}}
-        onHoverEnd={(e) => {}}
-      > */}
-      <Link className={styles.menu} href="/">
-        Menu
-      </Link>
-      {/* </motion.a> */}
+      {width > 800 ? (
+        <Link className={styles.menu} href="/">
+          Menu
+        </Link>
+      ) : (
+        <div>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
+          />
+          <span class="material-symbols-outlined">menu</span>
+        </div>
+      )}
     </nav>
   );
 };

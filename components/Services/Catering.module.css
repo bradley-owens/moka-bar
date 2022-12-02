@@ -520,7 +520,7 @@
     margin-top: 18rem;
     width: 9rem;
     height: 9rem;
-    animation: x 20s linear infinite alternate;
+    animation: x 50s linear infinite alternate;
   }
 
   .y {
@@ -529,7 +529,7 @@
     margin-top: -26rem;
     width: 9rem;
     height: 9rem;
-    animation: y 20s linear infinite alternate;
+    animation: y 50s linear infinite alternate;
   }
 
   @keyframes x {
@@ -588,7 +588,7 @@
     margin-top: 18rem;
     width: 9rem;
     height: 9rem;
-    animation: x 20s linear infinite alternate;
+    animation: x 50s linear infinite alternate;
   }
 
   .y {
@@ -597,7 +597,7 @@
     margin-top: -26rem;
     width: 9rem;
     height: 9rem;
-    animation: y 20s linear infinite alternate;
+    animation: y 50s linear infinite alternate;
   }
 }
 
@@ -643,7 +643,7 @@
     margin-top: 18rem;
     width: 9rem;
     height: 9rem;
-    animation: x 20s linear infinite alternate;
+    animation: x 50s linear infinite alternate;
   }
 
   .y {
@@ -652,6 +652,6 @@
     margin-top: -26rem;
     width: 9rem;
     height: 9rem;
-    animation: y 20s linear infinite alternate;
+    animation: y 50s linear infinite alternate;
   }
 }
