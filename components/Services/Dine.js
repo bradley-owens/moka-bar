@@ -2,8 +2,7 @@ import Image from "next/image";
 import img1 from "../../public/service1.png";
 import img2 from "../../public/service2.png";
 import styles from "./Dine.module.css";
-import { animate, motion } from "framer-motion";
-import { animationStyles } from "./AnimationStyles";
+import { motion } from "framer-motion";
 import { DiningAnimationStyles } from "../Hooks/AnimationsStyles/DiningAnimationStyles";
 
 const Dine = () => {
