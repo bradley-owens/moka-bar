@@ -3,23 +3,11 @@ import img1 from "../../public/service1.png";
 import img2 from "../../public/service2.png";
 import styles from "./Dine.module.css";
 import { animate, motion } from "framer-motion";
+import { animationStyles } from "./AnimationStyles";
+import { DiningAnimationStyles } from "../Hooks/AnimationsStyles/DiningAnimationStyles";
 
 const Dine = () => {
-  const animationStyles = {
-    hidden: {
-      x: 50,
-      scale: 0.8,
-      opacity: 0,
-    },
-    visible: {
-      x: -50,
-      scale: 1,
-      opacity: 1,
-      transition: {
-        delay: 0.3,
-      },
-    },
-  };
+  const variantStyles = DiningAnimationStyles();
 
   return (
     <div className={styles.service}>
@@ -34,7 +22,7 @@ const Dine = () => {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        variants={animationStyles}
+        variants={variantStyles}
       >
         <h1>Come Dine With Us</h1>
       </motion.div>
@@ -55,7 +43,7 @@ const Dine = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          variants={animationStyles}
+          variants={variantStyles}
         >
           <div className={styles.info}>
             <p>
@@ -68,7 +56,7 @@ const Dine = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          variants={animationStyles}
+          variants={variantStyles}
         >
           <button>See Menu!</button>
         </motion.div>

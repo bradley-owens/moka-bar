@@ -22,7 +22,7 @@
 
 .main button {
   position: absolute;
-  bottom: -6rem;
+  bottom: -7rem;
   left: 1rem;
   background-color: rgba(255, 0, 0, 0.414);
   border: none;
@@ -310,7 +310,7 @@
   }
 
   .main button {
-    bottom: -3rem;
+    bottom: -4.5rem;
     left: 1rem;
     padding: 1rem 1.5rem;
     font-size: 1.3rem;
@@ -364,7 +364,7 @@
   }
 
   .main button {
-    bottom: -2.5rem;
+    bottom: -4.5rem;
     left: 1rem;
     padding: 1rem 1.5rem;
     font-size: 1.1rem;
@@ -520,7 +520,7 @@
     margin-top: 18rem;
     width: 9rem;
     height: 9rem;
-    animation: x 10s linear infinite alternate;
+    animation: x 20s linear infinite alternate;
   }
 
   .y {
@@ -529,7 +529,7 @@
     margin-top: -26rem;
     width: 9rem;
     height: 9rem;
-    animation: y 10s linear infinite alternate;
+    animation: y 20s linear infinite alternate;
   }
 
   @keyframes x {
@@ -588,7 +588,7 @@
     margin-top: 18rem;
     width: 9rem;
     height: 9rem;
-    animation: x 10s linear infinite alternate;
+    animation: x 20s linear infinite alternate;
   }
 
   .y {
@@ -597,7 +597,7 @@
     margin-top: -26rem;
     width: 9rem;
     height: 9rem;
-    animation: y 10s linear infinite alternate;
+    animation: y 20s linear infinite alternate;
   }
 }
 
@@ -643,7 +643,7 @@
     margin-top: 18rem;
     width: 9rem;
     height: 9rem;
-    animation: x 10s linear infinite alternate;
+    animation: x 20s linear infinite alternate;
   }
 
   .y {
@@ -652,6 +652,6 @@
     margin-top: -26rem;
     width: 9rem;
     height: 9rem;
-    animation: y 10s linear infinite alternate;
+    animation: y 20s linear infinite alternate;
   }
 }

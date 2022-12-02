@@ -35,7 +35,7 @@
   /* animation: wiggle 3s alternate infinite; */
 }
 
-/* @keyframes wiggle {
+@keyframes wiggle {
   0% {
     transform: rotate(3deg);
   }
@@ -51,7 +51,7 @@
   100% {
     transform: rotate(0deg);
   }
-} */
+}
 .info {
   font-size: 2rem;
   background-color: rgba(255, 0, 0, 0.414);
@@ -300,7 +300,7 @@
   }
 
   .main button {
-    bottom: -3rem;
+    bottom: -4.5rem;
     right: 1rem;
     padding: 1rem 1.5rem;
     font-size: 1.3rem;
@@ -354,7 +354,7 @@
   }
 
   .main button {
-    bottom: -2.5rem;
+    bottom: -4.5rem;
     right: 1rem;
     padding: 1rem 1.5rem;
     font-size: 1.1rem;
@@ -510,7 +510,7 @@
     margin-top: 18rem;
     width: 9rem;
     height: 9rem;
-    animation: x 10s linear infinite alternate;
+    animation: x 20s linear infinite alternate;
   }
 
   .y {
@@ -519,7 +519,7 @@
     margin-top: -26rem;
     width: 9rem;
     height: 9rem;
-    animation: y 10s linear infinite alternate;
+    animation: y 20s linear infinite alternate;
   }
 
   @keyframes x {
@@ -578,7 +578,7 @@
     margin-top: 18rem;
     width: 9rem;
     height: 9rem;
-    animation: x 10s linear infinite alternate;
+    animation: x 20s linear infinite alternate;
   }
 
   .y {
@@ -587,7 +587,7 @@
     margin-top: -26rem;
     width: 9rem;
     height: 9rem;
-    animation: y 10s linear infinite alternate;
+    animation: y 20s linear infinite alternate;
   }
 }
 

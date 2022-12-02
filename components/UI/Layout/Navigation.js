@@ -2,6 +2,7 @@ import logoImg from "../../../public/4.png";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Navigation.module.css";
+import { motion } from "framer-motion";
 
 const Navigation = () => {
   return (
@@ -22,9 +23,15 @@ const Navigation = () => {
           <Link href="/">Contact</Link>
         </li>
       </ul>
+      {/* <motion.a
+        whileHover={{ scale: 1.1 }}
+        onHoverStart={(e) => {}}
+        onHoverEnd={(e) => {}}
+      > */}
       <Link className={styles.menu} href="/">
         Menu
       </Link>
+      {/* </motion.a> */}
     </nav>
   );
 };

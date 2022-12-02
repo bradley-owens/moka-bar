@@ -3,29 +3,17 @@ import img1 from "../../public/catering1.png";
 import img2 from "../../public/catering2.png";
 import styles from "./Catering.module.css";
 import { motion } from "framer-motion";
+import { CateringAnimationStyles } from "../Hooks/AnimationsStyles/CateringAnimationStyles";
 
 const Catering = () => {
-  const animationStyles = {
-    hidden: {
-      x: 50,
-      scale: 0.8,
-      opacity: 0,
-    },
-    visible: {
-      x: -50,
-      scale: 1,
-      opacity: 1,
-      transition: {
-        delay: 0.3,
-      },
-    },
-  };
+  const variantStyles = CateringAnimationStyles();
+
   return (
     <div className={styles.service}>
       <motion.div
         initial="hidden"
         whileInView="visible"
-        variants={animationStyles}
+        variants={variantStyles}
       >
         <h1>Book our Catering</h1>
       </motion.div>
@@ -51,7 +39,7 @@ const Catering = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          variants={animationStyles}
+          variants={variantStyles}
         >
           <div className={styles.info}>
             <p>
@@ -64,7 +52,7 @@ const Catering = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          variants={animationStyles}
+          variants={variantStyles}
         >
           <button>See more!</button>
         </motion.div>

@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./Hero.module.css";
 import { motion } from "framer-motion";
 import { Fragment } from "react";
+import React, { useState, useEffect } from "react";
 
 const Hero = () => {
   return (
