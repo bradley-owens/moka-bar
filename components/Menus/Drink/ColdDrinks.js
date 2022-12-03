@@ -13,9 +13,9 @@ const ColdDrinksMenu = () => {
         description:
           "Banana, Berries, Yoghurt, Acai, Honey, Milk & Bee Pollen.",
       },
-      { name: "Mango" },
-      { name: "Banana" },
-      { name: "Berry" },
+      { name: "Mango", description: "Mix & Match" },
+      { name: "Banana", description: "Mix & Match" },
+      { name: "Berry", description: "Mix & Match" },
     ],
     milkshakes: [
       { name: "Caramel" },
@@ -44,7 +44,7 @@ const ColdDrinksMenu = () => {
   return (
     <div className={styles.container}>
       <div className={styles.type}>
-        <h2>Smoothie </h2>
+        <h2>Smoothies </h2>
         <div className={styles.menu}>
           {coldDrinks.smoothies.map((item) => {
             return <ItemCard name={item.name} description={item.description} />;

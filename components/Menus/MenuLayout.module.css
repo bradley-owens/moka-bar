@@ -3,16 +3,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  width: 100vw;
+  gap: 1rem;
+  width: 95vw;
+  /* background-color: rgba(255, 0, 0, 0.414); */
+  border-radius: 40px;
+  padding: 2rem;
 }
 
 .menu {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 400px 400px 400px;
   column-gap: 3rem;
   row-gap: 2rem;
-  padding: 1rem;
+  padding: 3rem;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -24,4 +27,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.type h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: rgba(255, 0, 0, 0.414);
+  border-bottom: 3px solid rgba(255, 0, 0, 0.414);
+  margin-bottom: 1.5rem;
 }

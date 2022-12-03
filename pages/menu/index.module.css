@@ -3,6 +3,7 @@
   justify-content: center;
   height: max-content;
   background-color: rgb(246, 251, 255);
+  /* background-color: #51d2cc; */
 }
 .menu {
   display: flex;

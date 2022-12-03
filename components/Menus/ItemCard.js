@@ -23,9 +23,8 @@ const ItemCard = (props) => {
       }}
     >
       <div className={styles.card}>
-        <h2>{props.name}</h2>
+        <h3>{props.name}</h3>
         <p>{props.description ? props.description : null}</p>
-        <p>$5</p>
       </div>
     </motion.div>
   );
