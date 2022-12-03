@@ -32,7 +32,7 @@ const HotDrinksMenu = () => {
     <div className={styles.container}>
       <div className={styles.type}>
         <h2>Coffee </h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-drinks"]}>
           {hotDrinks.coffee.map((item) => {
             return <ItemCard name={item.name} />;
           })}
@@ -40,7 +40,7 @@ const HotDrinksMenu = () => {
       </div>
       <div className={styles.type}>
         <h2>Tea</h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-drinks"]}>
           {hotDrinks.tea.map((item) => {
             return <ItemCard name={item.name} />;
           })}

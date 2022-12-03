@@ -10,10 +10,10 @@
   padding: 2rem;
 }
 
-.menu {
+.menu-food {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-columns: 600px 600px;
+  /* grid-template-columns: 600px 600px; */
   column-gap: 3rem;
   row-gap: 2rem;
   padding: 3rem;
@@ -23,6 +23,18 @@
   border-radius: 20px;
 }
 
+.menu-drinks {
+  display: grid;
+  /* grid-template-columns: 1fr; */
+  grid-template-columns: 600px 600px;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  padding: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
 .type {
   display: flex;
   flex-direction: column;

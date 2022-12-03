@@ -109,7 +109,7 @@ const FoodMenu = () => {
     <div className={styles.container}>
       <div className={styles.type}>
         <h2>Paninis</h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-food"]}>
           {food.paninis.map((item) => {
             return (
               <ItemCard
@@ -123,7 +123,7 @@ const FoodMenu = () => {
       </div>
       <div className={styles.type}>
         <h2>Wraps</h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-food"]}>
           {food.wraps.map((item) => {
             return (
               <ItemCard
@@ -137,7 +137,7 @@ const FoodMenu = () => {
       </div>
       <div className={styles.type}>
         <h2>Quesadillas</h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-food"]}>
           {food.quesadillas.map((item) => {
             return (
               <ItemCard
@@ -151,7 +151,7 @@ const FoodMenu = () => {
       </div>
       <div className={styles.type}>
         <h2>Our Favourite</h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-food"]}>
           {food.avocado.map((item) => {
             return (
               <ItemCard
@@ -165,7 +165,7 @@ const FoodMenu = () => {
       </div>
       <div className={styles.type}>
         <h2>Sandwhiches</h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-food"]}>
           {food.sandwhiches.map((item) => {
             return (
               <ItemCard
@@ -179,7 +179,7 @@ const FoodMenu = () => {
       </div>
       <div className={styles.type}>
         <h2>Raisin Toast</h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-food"]}>
           {food.raisinToast.map((item) => {
             return (
               <ItemCard
@@ -193,7 +193,7 @@ const FoodMenu = () => {
       </div>
       <div className={styles.type}>
         <h2>Bowls</h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-food"]}>
           {food.bowls.map((item) => {
             return (
               <ItemCard

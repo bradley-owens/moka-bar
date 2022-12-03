@@ -45,7 +45,7 @@ const ColdDrinksMenu = () => {
     <div className={styles.container}>
       <div className={styles.type}>
         <h2>Smoothies </h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-drinks"]}>
           {coldDrinks.smoothies.map((item) => {
             return <ItemCard name={item.name} description={item.description} />;
           })}
@@ -54,7 +54,7 @@ const ColdDrinksMenu = () => {
 
       <div className={styles.type}>
         <h2>Milkshakes</h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-drinks"]}>
           {coldDrinks.milkshakes.map((item) => {
             return <ItemCard name={item.name} description={item.description} />;
           })}
@@ -63,7 +63,7 @@ const ColdDrinksMenu = () => {
 
       <div className={styles.type}>
         <h2>Fresh Juice</h2>
-        <div className={styles.menu}>
+        <div className={styles["menu-drinks"]}>
           {coldDrinks.juice.map((item) => {
             return <ItemCard name={item.name} description={item.description} />;
           })}
