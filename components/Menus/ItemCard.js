@@ -1,7 +1,7 @@
 import styles from "./ItemCard.module.css";
 import { motion } from "framer-motion";
 
-const ItemCard = (name) => {
+const ItemCard = (props) => {
   return (
     <motion.div
       initial="hidden"
@@ -23,7 +23,9 @@ const ItemCard = (name) => {
       }}
     >
       <div className={styles.card}>
-        <h2>{name.name}</h2>
+        <h2>{props.name}</h2>
+        <p>{props.description ? props.description : null}</p>
+        <p>$5</p>
       </div>
     </motion.div>
   );

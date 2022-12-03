@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FoodMenu from "../../components/Menus/Food/FoodMenu";
-import HotDrinksMenu from "../../components/Menus/Drinks/HotDrinks";
-import ColdDrinksMenu from "../../components/Menus/Drinks/ColdDrinks";
+import HotDrinksMenu from "../../components/Menus/Drink/HotDrinks";
+import ColdDrinksMenu from "../../components/Menus/Drink/ColdDrinks";
 import Layout from "../../components/UI/Layout/Layout";
 import styles from "./index.module.css";
 

@@ -1,7 +1,7 @@
 .main {
   display: grid;
   justify-content: center;
-  height: 100vh;
+  height: max-content;
   background-color: rgb(246, 251, 255);
 }
 .menu {
@@ -34,6 +34,9 @@
   padding: 1.5rem;
   background-color: #51d2cb;
   border-radius: 50px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 6px 0px,
+    rgba(14, 30, 37, 0.12) 0px 4px 18px 0px;
+  /* margin-bottom: 5rem; */
 }
 
 .option {

@@ -28,33 +28,6 @@ const HotDrinksMenu = () => {
     ],
   };
 
-  const coffee = [
-    { name: "Babycino" },
-    { name: "Cuppucino" },
-    { name: "Espresso" },
-    { name: "Flat White" },
-    { name: "Long Black" },
-    { name: "Macchiato" },
-    { name: "Piccolo" },
-    { name: "Chai Latte" },
-    { name: "Dirty Chai" },
-    { name: "Matcha Latte" },
-    { name: "Hot Chocolate" },
-    { name: "Mocha" },
-  ];
-
-  const tea = [
-    "Early Grey",
-    "English Breakfast",
-    "Camomile",
-    "Chai",
-    "Green",
-    "Peppermint",
-  ];
-
-  // hotDrinks.coffee.map((item) => {
-  //   console.log(item);
-  // });
   return (
     <div className={styles.container}>
       <div className={styles.type}>
