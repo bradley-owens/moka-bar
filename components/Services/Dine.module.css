@@ -32,21 +32,29 @@
   font-weight: 700;
   border-radius: 40px;
   font-size: 1.5rem;
-  /* animation: wiggle 3s alternate infinite; */
+  transition: 0.3s;
+
+  animation: wiggle 3s alternate infinite;
+}
+
+.main button:hover {
+  cursor: pointer;
+  padding: 1rem 3.5rem;
+  transition: 0.3s;
 }
 
 @keyframes wiggle {
   0% {
-    transform: rotate(3deg);
+    transform: rotate(2deg);
   }
   25% {
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
   }
   50% {
-    transform: rotate(3deg);
+    transform: rotate(2deg);
   }
   75% {
-    transform: rotate(-3deg);
+    transform: rotate(-2deg);
   }
   100% {
     transform: rotate(0deg);

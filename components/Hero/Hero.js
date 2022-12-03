@@ -9,7 +9,15 @@ import React, { useState, useEffect } from "react";
 
 const Hero = () => {
   return (
-    <Fragment>
+    <motion.div
+      className={styles.nav}
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        delay: 0.2,
+        duration: 0.9,
+      }}
+    >
       <div className={styles.main}>
         <Image
           className={styles["hero-img"]}
@@ -39,7 +47,7 @@ const Hero = () => {
           />
         </div>
       </div>
-    </Fragment>
+    </motion.div>
   );
 };
 

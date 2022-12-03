@@ -5,13 +5,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   /* background-color: antiquewhite; */
 }
 
 .x {
   margin-top: -16rem;
   position: absolute;
-  z-index: -999;
+  z-index: 1;
   background-color: rgba(255, 0, 0, 0.223);
   width: 23rem;
   height: 23rem;
@@ -26,7 +27,7 @@
 .y {
   margin-top: 18rem;
   position: absolute;
-  z-index: -999;
+  z-index: 1;
   background-color: rgba(255, 0, 0, 0.223);
   width: 23rem;
   height: 23rem;

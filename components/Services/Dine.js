@@ -4,6 +4,7 @@ import img2 from "../../public/service2.png";
 import styles from "./Dine.module.css";
 import { motion } from "framer-motion";
 import { DiningAnimationStyles } from "../Hooks/AnimationsStyles/DiningAnimationStyles";
+import Link from "next/link";
 
 const Dine = () => {
   const variantStyles = DiningAnimationStyles();
@@ -57,7 +58,9 @@ const Dine = () => {
           whileInView="visible"
           variants={variantStyles}
         >
-          <button>See Menu!</button>
+          <Link href="/menu">
+            <button>See Menu!</button>
+          </Link>
         </motion.div>
       </div>
     </div>

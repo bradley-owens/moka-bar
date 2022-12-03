@@ -8,9 +8,15 @@ import useDeviceSize from "../../Hooks/useDeviceSize";
 const Navigation = () => {
   const [width] = useDeviceSize();
 
-  console.log(width);
   return (
-    <nav className={styles.nav}>
+    <motion.div
+      className={styles.nav}
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 0.2,
+      }}
+    >
       {/* <Image className={styles.logo} src={logoImg} width="4rem" alt="logo" /> */}
       <h1>Moka Bar</h1>
 
@@ -29,7 +35,7 @@ const Navigation = () => {
         </li>
       </ul>
       {width > 800 ? (
-        <Link className={styles.menu} href="/">
+        <Link className={styles.menu} href="/menu">
           Menu
         </Link>
       ) : (
@@ -38,10 +44,10 @@ const Navigation = () => {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
           />
-          <span class="material-symbols-outlined">menu</span>
+          <span className="material-symbols-outlined">menu</span>
         </div>
       )}
-    </nav>
+    </motion.div>
   );
 };
 

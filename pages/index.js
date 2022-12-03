@@ -13,8 +13,8 @@ export default function Home() {
         <Hero />
         <Story />
         <Services />
+        <Footer />
       </div>
-      <Footer />
     </Layout>
   );
 }
