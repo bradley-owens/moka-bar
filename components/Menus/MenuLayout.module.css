@@ -12,7 +12,8 @@
 
 .menu {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 1fr;
+  grid-template-columns: 600px 600px;
   column-gap: 3rem;
   row-gap: 2rem;
   padding: 3rem;
@@ -33,6 +34,7 @@
   font-size: 3rem;
   font-weight: 800;
   color: rgba(255, 0, 0, 0.414);
-  border-bottom: 3px solid rgba(255, 0, 0, 0.414);
+  border-bottom: 5px solid rgba(255, 0, 0, 0.414);
   margin-bottom: 1.5rem;
+  /* margin-left: 2rem; */
 }
