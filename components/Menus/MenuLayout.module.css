@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100vw;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
