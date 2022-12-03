@@ -2,6 +2,16 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 10rem;
   background-color: rgb(246, 251, 255);
+}
+
+.main h1 {
+  background-color: rgba(255, 0, 0, 0.414);
+  width: fit-content;
+  padding: 1rem 4rem;
+  font-size: 2rem;
+  color: white;
+  border-radius: 40px;
 }

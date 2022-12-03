@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #46bbb6;
+  background-color: #51d2cc;
   padding: 0 10%;
   width: 100%;
   height: 5rem;
@@ -16,8 +16,8 @@
 .nav h1 {
   color: white;
   /* font-size: 40px; */
-  /* -webkit-text-stroke: 1.5px rgba(255, 0, 0, 0.826); */
-  font-size: 2.2rem;
+  /* -webkit-text-stroke: 1px rgba(255, 0, 0, 0.926); */
+  font-size: 2rem;
 }
 
 .logo {

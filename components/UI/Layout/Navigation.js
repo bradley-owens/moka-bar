@@ -18,7 +18,7 @@ const Navigation = () => {
       }}
     >
       {/* <Image className={styles.logo} src={logoImg} width="4rem" alt="logo" /> */}
-      <h1>Moka Bar</h1>
+      <h1>MOKA BAR</h1>
 
       <ul>
         <li>
