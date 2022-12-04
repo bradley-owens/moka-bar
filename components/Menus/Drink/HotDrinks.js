@@ -19,7 +19,7 @@ const HotDrinksMenu = () => {
   return (
     <div className={styles.container}>
       <div className={styles.type}>
-        <h2>HotDrinks </h2>
+        <h2>Hot Drinks </h2>
         <div className={styles["menu-drinks"]}>
           {hotDrinks.map((item) => {
             return <ItemCard name={item.name} description={item.description} />;

@@ -3,7 +3,6 @@
   justify-content: center;
   height: max-content;
   background-color: rgb(246, 251, 255);
-  /* background-color: #51d2cc; */
 }
 .menu {
   display: flex;
@@ -65,4 +64,61 @@
 
 .active:hover {
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .tabs {
+    width: 80vw;
+    height: 12vh;
+    padding: 1.5rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 555px) {
+  .tabs {
+    width: 90vw;
+    height: 12vh;
+    padding: 1rem;
+    justify-content: space-evenly;
+  }
+  .option {
+    font-size: 1.2rem;
+  }
+
+  .active {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 426px) {
+  .main h1 {
+    padding: 0.5rem 4rem;
+    font-size: 1.5rem;
+  }
+
+  .tabs {
+    width: 90vw;
+    height: 10vh;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 325px) {
+  .tabs {
+    width: 90vw;
+    height: 8vh;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+  }
+  .option {
+    font-size: 1rem;
+  }
+
+  .active {
+    font-size: 1rem;
+    font-weight: 700;
+  }
 }

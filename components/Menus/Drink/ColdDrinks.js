@@ -53,18 +53,18 @@ const ColdDrinksMenu = () => {
       </div>
 
       <div className={styles.type}>
-        <h2>Milkshakes</h2>
+        <h2>Fresh Juice</h2>
         <div className={styles["menu-drinks"]}>
-          {coldDrinks.milkshakes.map((item) => {
+          {coldDrinks.juice.map((item) => {
             return <ItemCard name={item.name} description={item.description} />;
           })}
         </div>
       </div>
 
       <div className={styles.type}>
-        <h2>Fresh Juice</h2>
+        <h2>Milkshakes</h2>
         <div className={styles["menu-drinks"]}>
-          {coldDrinks.juice.map((item) => {
+          {coldDrinks.milkshakes.map((item) => {
             return <ItemCard name={item.name} description={item.description} />;
           })}
         </div>
