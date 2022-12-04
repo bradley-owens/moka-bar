@@ -1,4 +1,4 @@
-import ItemCard from "../ItemCard";
+import ItemCard from "../../UI/MenuItems/ItemCard";
 import styles from "../MenuLayout.module.css";
 
 const HotDrinksMenu = () => {
