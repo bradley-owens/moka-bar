@@ -1,38 +1,42 @@
 import Image from "next/image";
-import img1 from "../../public/catering1.png";
-import img2 from "../../public/catering2.png";
-import styles from "./Catering.module.css";
+import img1 from "../../../public/service1.png";
+import img2 from "../../../public/service2.png";
+import styles from "./Dine.module.css";
 import { motion } from "framer-motion";
-import { CateringAnimationStyles } from "../Hooks/AnimationsStyles/CateringAnimationStyles";
+import { DiningAnimationStyles } from "../../Hooks/AnimationsStyles/DiningAnimationStyles";
+import Link from "next/link";
 
-const Catering = () => {
-  const variantStyles = CateringAnimationStyles();
+const Dine = () => {
+  const variantStyles = DiningAnimationStyles();
 
   return (
     <div className={styles.service}>
+      <div className={styles.x}>
+        <p> background-circle</p>
+      </div>
+
+      <div className={styles.y}>
+        <p> background-circle</p>
+      </div>
+
       <motion.div
         initial="hidden"
         whileInView="visible"
         variants={variantStyles}
       >
-        <h1>Book our Catering</h1>
+        <h1>Come Dine With Us</h1>
       </motion.div>
-      <div className={styles.x}>
-        <p> background-circle</p>
-      </div>
-      <div className={styles.y}>
-        <p> background-circle</p>
-      </div>
+
       <div className={styles.main}>
         <Image
           className={styles.img1}
-          src={img2}
+          src={img1}
           alt="service-img1"
           width="1rem"
         />
         <Image
           className={styles.img2}
-          src={img1}
+          src={img2}
           alt="service-img2"
           width="1rem"
         />
@@ -43,8 +47,8 @@ const Catering = () => {
         >
           <div className={styles.info}>
             <p>
-              Have a look at our catering packages and order a feast for all
-              your job, friends or family!
+              Grab a table with a few friends for a coffee or enjoy our freshly
+              made delicacies
             </p>
           </div>
         </motion.div>
@@ -54,11 +58,13 @@ const Catering = () => {
           whileInView="visible"
           variants={variantStyles}
         >
-          <button>See more!</button>
+          <Link href="/menu">
+            <button>See Menu!</button>
+          </Link>
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default Catering;
+export default Dine;

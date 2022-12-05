@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Catering from "./Catering";
-import Dine from "./Dine";
-import Merchandise from "./Merchandise";
+import Catering from "./Catering/Catering";
+import Dine from "./Dine/Dine";
+import Merchandise from "./Merchandise/Merchandise";
 import styles from "./Services.module.css";
 
 const Services = () => {

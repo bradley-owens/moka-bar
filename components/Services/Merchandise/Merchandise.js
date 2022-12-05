@@ -1,6 +1,6 @@
 import Image from "next/image";
-import beansImg from "../../public/3.png";
-import mugsImg from "../../public/mug.png";
+import beansImg from "../../../public/3.png";
+import mugsImg from "../../../public/mug.png";
 import styles from "./Merchandise.module.css";
 import { motion } from "framer-motion";
 

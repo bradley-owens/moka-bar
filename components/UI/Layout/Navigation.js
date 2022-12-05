@@ -31,7 +31,7 @@ const Navigation = () => {
           <Link href="/">Gallery</Link>
         </li>
         <li>
-          <Link href="/">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
       {width > 800 ? (

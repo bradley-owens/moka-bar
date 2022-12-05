@@ -3,8 +3,6 @@
   flex-direction: column;
   gap: 8rem;
   background-color: rgb(246, 251, 255);
-
-  /* z-index: -1000; */
 }
 
 @media (max-width: 380px) {
