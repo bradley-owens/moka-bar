@@ -3,17 +3,15 @@ import { motion } from "framer-motion";
 
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
-const mapStyle = {
-  width: "50vw",
-  height: "45vh",
-  borderRadius: "20px",
-  // border: "4px solid white",
-  // marginTop: "-2rem",
-};
-
-const center = { lat: -16.816309, lng: 145.686738 };
-
 const Map = () => {
+  const mapStyle = {
+    width: "70vw",
+    height: "45vh",
+    borderRadius: "20px",
+  };
+
+  const center = { lat: -16.816509, lng: 145.686738 };
+
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
     googleMapsApiKey: "AIzaSyAxrrvwuspgkZ7eFGiZJ_AuKDnIRaZkAmI",

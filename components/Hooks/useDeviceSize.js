@@ -15,7 +15,7 @@ const useDeviceSize = () => {
     window.addEventListener("resize", handleWindowResize);
     // unsubscribe from the event on component unmount
     return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
+  }, [width, height]);
 
   return [width, height];
 };
