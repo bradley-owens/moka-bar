@@ -28,12 +28,12 @@ const Map = () => {
         whileInView="visible"
         variants={{
           hidden: {
-            y: 5,
+            y: 3,
             scale: 0.8,
             opacity: 0,
           },
           visible: {
-            y: -5,
+            y: -3,
             scale: 1,
             opacity: 1,
             transition: {
