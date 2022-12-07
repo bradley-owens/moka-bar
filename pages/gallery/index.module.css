@@ -40,13 +40,43 @@
 
   column-gap: 0.5rem;
   row-gap: 0.5rem;
-  transition: opacity 1s ease-in-out;
 }
 
-.image {
+.image1 {
   width: 16rem;
   height: 14rem;
   border-radius: 20px;
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+.image2 {
+  width: 16rem;
+  height: 14rem;
+  border-radius: 20px;
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.7s;
+  animation-fill-mode: backwards;
+}
+.image3 {
+  width: 16rem;
+  height: 14rem;
+  border-radius: 20px;
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.9s;
+  animation-fill-mode: backwards;
+}
+.image4 {
+  width: 16rem;
+  height: 14rem;
+  border-radius: 20px;
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 
 .img-vertical {
@@ -54,8 +84,10 @@
   height: 30rem;
   grid-row: 1/ 3;
   border-radius: 20px;
-
-  /* height: 14rem; */
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.2s;
+  animation-fill-mode: backwards;
 }
 
 .img-horizontal {
@@ -64,6 +96,21 @@
   grid-column: 3/5;
   grid-row: 1/ 2;
   border-radius: 20px;
+  animation-duration: 0.4s;
+  animation-name: animate-fade;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .change-button {
