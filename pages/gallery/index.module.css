@@ -197,3 +197,29 @@
     transition: opacity 1s ease-in-out;
   }
 }
+@media (max-width: 426px) {
+  .container {
+    height: 100vh;
+  }
+  .main h1 {
+    background-color: #ff00006a;
+    width: fit-content;
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 426px) {
+  .main h1 {
+    background-color: #ff00006a;
+    width: fit-content;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: white;
+    border-radius: 40px;
+  }
+}

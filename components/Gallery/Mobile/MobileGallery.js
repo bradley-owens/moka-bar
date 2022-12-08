@@ -11,7 +11,8 @@ import img9 from "../../../public/galleryImages/gallery9.png";
 import img10 from "../../../public/galleryImages/gallery10.png";
 import img11 from "../../../public/galleryImages/gallery11.png";
 import img12 from "../../../public/galleryImages/gallery12.png";
-import switchBtn from "../../../public/galleryImages/change.png";
+import switchBtnRight from "../../../public/galleryImages/change.png";
+import switchBtnLeft from "../../../public/galleryImages/left.png";
 import { useState } from "react";
 import styles from "./MobileGallery.module.css";
 
@@ -32,32 +33,44 @@ const carouselImages = [
 
 const MobileGallery = () => {
   const [imageSrcState, setImageSrcState] = useState(0);
-  const switchImageHandler = () => {
+  const switchImageHandler = (e) => {
+    const direction = e.target.value;
     if (imageSrcState === 11) {
       setImageSrcState(0);
     } else {
       setImageSrcState(imageSrcState + 1);
-      console.log("incremented");
     }
   };
 
   return (
-    <div>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.carousel}>
         <Image
+          key={Math.random()}
           className={styles.image}
           src={carouselImages[imageSrcState].src}
           alt="gallery-img"
           width="2rem"
         />
       </div>
-      <Image
-        onClick={switchImageHandler}
-        className={styles.switch}
-        src={switchBtn}
-        alt="gallery-img"
-        width="2rem"
-      />
+      <div>
+        <Image
+          id="left"
+          onClick={switchImageHandler}
+          className={styles.switch}
+          src={switchBtnLeft}
+          alt="gallery-img"
+          width="2rem"
+        />
+        <Image
+          id="right"
+          onClick={switchImageHandler}
+          className={styles.switch}
+          src={switchBtnRight}
+          alt="gallery-img"
+          width="2rem"
+        />
+      </div>
     </div>
   );
 };
