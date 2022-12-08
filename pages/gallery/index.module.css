@@ -129,6 +129,7 @@
 @media (max-width: 1054px) {
   .gallery-1 {
     display: grid;
+    padding: 1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 240px 240px;
 

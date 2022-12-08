@@ -32,14 +32,17 @@ const carouselImages = [
 ];
 
 const MobileGallery = () => {
-  const [imageSrcState, setImageSrcState] = useState(0);
+  const [imageSrcState, setImageSrcState] = useState(5);
   const switchImageHandler = (e) => {
-    const direction = e.target.value;
+    const direction = e.target.id;
     if (imageSrcState === 11) {
       setImageSrcState(0);
+    } else if (direction === "left") {
+      setImageSrcState(imageSrcState - 1);
     } else {
       setImageSrcState(imageSrcState + 1);
     }
+    console.log(imageSrcState);
   };
 
   return (
@@ -53,7 +56,7 @@ const MobileGallery = () => {
           width="2rem"
         />
       </div>
-      <div>
+      <div className={styles["switch-container"]}>
         <Image
           id="left"
           onClick={switchImageHandler}
