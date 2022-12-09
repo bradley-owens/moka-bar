@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -10,7 +11,9 @@ const Footer = () => {
         <p>0428835477</p>
       </div>
       <div>
-        <p>Home</p>
+        <Link href="/">
+          <p>Home</p>
+        </Link>
         <p>Menu</p>
         <p>Catering</p>
         <p>Merchandise</p>
