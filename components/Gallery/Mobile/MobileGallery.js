@@ -37,6 +37,8 @@ const MobileGallery = () => {
     const direction = e.target.id;
     if (imageSrcState === 11) {
       setImageSrcState(0);
+    } else if (imageSrcState === 1) {
+      setImageSrcState(10);
     } else if (direction === "left") {
       setImageSrcState(imageSrcState - 1);
     } else {

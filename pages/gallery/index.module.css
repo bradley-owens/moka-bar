@@ -22,6 +22,7 @@
   font-weight: 800;
   color: white;
   border-radius: 40px;
+  margin-top: -1rem;
 }
 
 .gallery-1 {
@@ -110,21 +111,21 @@
   animation-name: rotate;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  /* animation-duration: 1s; */
+  animation-duration: 1s;
 }
 
 .change-button:hover {
   cursor: pointer;
 }
 
-/* @keyframes rotate {
+@keyframes rotate {
   from {
-    transform: translateX(-10px);
+    transform: translateX(15px);
   }
   to {
     transform: none;
   }
-} */
+}
 
 @media (max-width: 1054px) {
   .gallery-1 {
