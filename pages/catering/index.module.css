@@ -81,10 +81,15 @@
   padding: 1.5rem; */
 }
 
+.package p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .package-img {
   width: 90%;
   height: 200px;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .package button {
@@ -97,4 +102,11 @@
   border-radius: 20px;
   box-shadow: rgba(14, 30, 37, 0.22) 0px 2px 3px 0px,
     rgba(14, 30, 37, 0.22) 0px 2px 3px 0px;
+  transition: 0.3s;
+}
+
+.package button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.414);
+  transition: 0.3s;
 }

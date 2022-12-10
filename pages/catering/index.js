@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import cakesImg from "../../public/galleryImages/catering.png";
 import fruitImg from "../../public/galleryImages/gallery2.png";
 import grazingImg from "../../public/galleryImages/gallery8.png";
+import Link from "next/link";
 
 const Catering = () => {
   const packages = [
@@ -101,7 +102,9 @@ const Catering = () => {
                     <p>
                       {`${item.sizes.small.size} ~ ${item.sizes.small.serves} ~ ${item.sizes.small.price}`}
                     </p>
-                    <button>Order Now</button>
+                    <Link href="/contact">
+                      <button>Order Now</button>
+                    </Link>
                   </div>
                 </motion.div>
               );
@@ -135,7 +138,9 @@ const Catering = () => {
                     <h4>{item.name}</h4>
                     <p>{item.description}</p>
                     <p>{item.price}</p>
-                    <button>Order Now</button>
+                    <Link href="/contact">
+                      <button>Order Now</button>
+                    </Link>
                   </div>
                 </motion.div>
               );

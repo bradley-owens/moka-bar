@@ -51,6 +51,12 @@
   /* border: 2px solid rgba(255, 0, 0, 1); */
 }
 
+.menu:hover {
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
 @media (max-width: 1000px) {
   .nav {
     padding: 0 7%;
