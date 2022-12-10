@@ -2,10 +2,14 @@ import Image from "next/image";
 import Layout from "../../components/UI/Layout/Layout";
 import styles from "./index.module.css";
 import { motion } from "framer-motion";
+import cakesImg from "../../public/galleryImages/catering.png";
+import fruitImg from "../../public/galleryImages/gallery2.png";
+import grazingImg from "../../public/galleryImages/gallery8.png";
 
 const Catering = () => {
   const packages = [
     {
+      src: cakesImg,
       name: "Assorted Cakes and Slices",
       sizes: {
         small: { size: "sml", serves: "Serves 4-6", price: "$40" },
@@ -14,6 +18,7 @@ const Catering = () => {
       },
     },
     {
+      src: fruitImg,
       name: "Fruit Platters",
       sizes: {
         small: { size: "sml", serves: "Serves 4-6", price: "$35" },
@@ -22,6 +27,7 @@ const Catering = () => {
       },
     },
     {
+      src: grazingImg,
       name: "Grazing Platters",
       sizes: {
         small: { size: "sml", serves: "Serves 4-6", price: "$55" },
@@ -79,7 +85,12 @@ const Catering = () => {
                   }}
                 >
                   <div className={styles.package}>
-                    <Image />
+                    <Image
+                      className={styles["package-img"]}
+                      src={item.src}
+                      alt="catering-img"
+                      width="2rem"
+                    />
                     <h4>{item.name}</h4>
                     <p>
                       {`${item.sizes.small.size} ~ ${item.sizes.small.serves} ~ ${item.sizes.small.price}`}
