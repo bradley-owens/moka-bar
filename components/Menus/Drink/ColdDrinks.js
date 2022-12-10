@@ -124,43 +124,73 @@ const ColdDrinksMenu = () => {
     <div className={styles.container}>
       <div className={styles.type}>
         <h2>Iced Beverages </h2>
-        <div className={styles["menu-drinks"]}>
+        <div className={styles["menu-4"]}>
           {coldDrinks.coffee.map((item) => {
-            return <ItemCard name={item.name} description={item.description} />;
+            return (
+              <ItemCard
+                name={item.name}
+                description={item.description}
+                price={item.price}
+              />
+            );
           })}
         </div>
       </div>
       <div className={styles.type}>
         <h2>Smoothies </h2>
-        <div className={styles["menu-drinks"]}>
+        <div className={styles["menu-3"]}>
           {coldDrinks.smoothies.map((item) => {
-            return <ItemCard name={item.name} description={item.description} />;
+            return (
+              <ItemCard
+                name={item.name}
+                description={item.description}
+                price={item.price}
+              />
+            );
           })}
         </div>
       </div>
 
       <div className={styles.type}>
         <h2>Fresh Juice</h2>
-        <div className={styles["menu-drinks"]}>
+        <div className={styles["menu-3"]}>
           {coldDrinks.juice.map((item) => {
-            return <ItemCard name={item.name} description={item.description} />;
+            return (
+              <ItemCard
+                name={item.name}
+                description={item.description}
+                price={item.price}
+              />
+            );
           })}
         </div>
       </div>
 
       <div className={styles.type}>
         <h2>Milkshakes / ThickShakes</h2>
-        <div className={styles["menu-drinks"]}>
+        <div className={styles["menu-4"]}>
           {coldDrinks.shakes.map((item) => {
-            return <ItemCard name={item.name} description={item.description} />;
+            return (
+              <ItemCard
+                name={item.name}
+                description={item.description}
+                price={item.price}
+              />
+            );
           })}
         </div>
       </div>
       <div className={styles.type}>
         <h2>Other Drinks</h2>
-        <div className={styles["menu-drinks"]}>
+        <div className={styles["menu-3"]}>
           {coldDrinks.others.map((item) => {
-            return <ItemCard name={item.name} description={item.description} />;
+            return (
+              <ItemCard
+                name={item.name}
+                description={item.description}
+                price={item.price}
+              />
+            );
           })}
         </div>
       </div>

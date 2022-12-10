@@ -25,6 +25,7 @@ const ItemCard = (props) => {
       <div className={styles.card}>
         <h3>{props.name}</h3>
         <p>{props.description ? props.description : null}</p>
+        <h4>{props.price}</h4>
       </div>
     </motion.div>
   );

@@ -57,23 +57,27 @@ const HotDrinksMenu = () => {
     ],
     tea: [
       {
-        name: "Flat White",
+        name: "Earl Grey",
         price: "$3.00 / $3.50 / $4.00",
       },
       {
-        name: "Cuppucino,",
+        name: "English Breakfast",
         price: "$3.00 / $3.50 / $4.00",
       },
       {
-        name: "Latte",
+        name: "Camomile",
         price: "$3.00 / $3.50 / $4.00",
       },
       {
-        name: "Long Black",
+        name: "Chai",
         price: "$3.00 / $3.50 / $4.00",
       },
       {
-        name: "Piccolo",
+        name: "Green",
+        price: "$3.00 / $3.50 / $4.00",
+      },
+      {
+        name: "Peppermint",
         price: "$3.00 / $3.50 / $4.00",
       },
     ],
@@ -96,21 +100,39 @@ const HotDrinksMenu = () => {
     <div className={styles.container}>
       <div className={styles.type}>
         <h2>Hot Drinks </h2>
-        <div className={styles["menu-drinks"]}>
+        <div className={styles["menu-3"]}>
           {hotDrinks.coffee.map((item) => {
-            return <ItemCard name={item.name} description={item.description} />;
+            return (
+              <ItemCard
+                name={item.name}
+                description={item.description}
+                price={item.price}
+              />
+            );
           })}
         </div>
         <h2>Tea </h2>
-        <div className={styles["menu-drinks"]}>
-          {merchandise.map((item) => {
-            return <ItemCard name={item.name} description={item.description} />;
+        <div className={styles["menu-3"]}>
+          {hotDrinks.tea.map((item) => {
+            return (
+              <ItemCard
+                name={item.name}
+                description={item.description}
+                price={item.price}
+              />
+            );
           })}
         </div>
         <h2>Take Home </h2>
-        <div className={styles["menu-drinks"]}>
+        <div className={styles["menu-2"]}>
           {merchandise.map((item) => {
-            return <ItemCard name={item.name} description={item.description} />;
+            return (
+              <ItemCard
+                name={item.name}
+                description={item.description}
+                price={item.price}
+              />
+            );
           })}
         </div>
       </div>
