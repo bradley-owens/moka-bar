@@ -13,8 +13,9 @@ import img11 from "../../../public/galleryImages/gallery11.png";
 import img12 from "../../../public/galleryImages/gallery12.png";
 import switchBtnRight from "../../../public/galleryImages/change.png";
 import switchBtnLeft from "../../../public/galleryImages/left.png";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import styles from "./MobileGallery.module.css";
+import { motion } from "framer-motion";
 
 const carouselImages = [
   { src: img1 },
@@ -32,50 +33,74 @@ const carouselImages = [
 ];
 
 const MobileGallery = () => {
-  const [imageSrcState, setImageSrcState] = useState(5);
-  const switchImageHandler = (e) => {
-    const direction = e.target.id;
-    if (imageSrcState === 11) {
-      setImageSrcState(0);
-    } else if (imageSrcState === 1) {
-      setImageSrcState(10);
-    } else if (direction === "left") {
-      setImageSrcState(imageSrcState - 1);
-    } else {
-      setImageSrcState(imageSrcState + 1);
-    }
-    console.log(imageSrcState);
-  };
+  // const [imageSrcState, setImageSrcState] = useState(5);
+  // const switchImageHandler = (e) => {
+  //   const direction = e.target.id;
+  //   if (imageSrcState === 11) {
+  //     setImageSrcState(0);
+  //   } else if (imageSrcState === 1) {
+  //     setImageSrcState(10);
+  //   } else if (direction === "left") {
+  //     setImageSrcState(imageSrcState - 1);
+  //   } else {
+  //     setImageSrcState(imageSrcState + 1);
+  //   }
+  //   console.log(imageSrcState);
+  // };
+
+  const [width, setWidth] = useState(0);
+  const carousel = useRef();
+
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
 
   return (
     <div className={styles.container}>
-      <div className={styles.carousel}>
-        <Image
-          key={Math.random()}
-          className={styles.image}
-          src={carouselImages[imageSrcState].src}
-          alt="gallery-img"
-          width="2rem"
-        />
-      </div>
-      <div className={styles["switch-container"]}>
-        <Image
-          id="left"
-          onClick={switchImageHandler}
-          className={styles.switch}
-          src={switchBtnLeft}
-          alt="gallery-img"
-          width="2rem"
-        />
-        <Image
-          id="right"
-          onClick={switchImageHandler}
-          className={styles.switch}
-          src={switchBtnRight}
-          alt="gallery-img"
-          width="2rem"
-        />
-      </div>
+      <motion.div
+        ref={carousel}
+        className={styles.carousel}
+        whileTap={{ cursor: "grabbing" }}
+      >
+        <motion.div
+          className={styles["inner-carousel"]}
+          drag="x"
+          dragConstraints={{ right: 0, left: -width }}
+        >
+          {carouselImages.map((img) => {
+            return (
+              <motion.div key={img.src} className={styles.item}>
+                <Image
+                  key={Math.random()}
+                  className={styles.image}
+                  src={img.src}
+                  alt="gallery-img"
+                  width="2rem"
+                />
+              </motion.div>
+            );
+          })}
+        </motion.div>
+      </motion.div>
+
+      {/* <div className={styles["switch-container"]}>
+    //     <Image
+    //       id="left"
+    //       onClick={switchImageHandler}
+    //       className={styles.switch}
+    //       src={switchBtnLeft}
+    //       alt="gallery-img"
+    //       width="2rem"
+    //     />
+    //     <Image
+    //       id="right"
+    //       onClick={switchImageHandler}
+    //       className={styles.switch}
+    //       src={switchBtnRight}
+    //       alt="gallery-img"
+    //       width="2rem"
+    //     />
+    //   </div> */}
     </div>
   );
 };

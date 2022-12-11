@@ -189,6 +189,13 @@
 }
 
 @media (max-width: 799px) {
+  .container {
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(246, 251, 255);
+    padding-bottom: 2rem;
+  }
   .gallery-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -203,10 +210,11 @@
   .container {
     height: 100vh;
   }
+
   .main h1 {
     background-color: #ff00006a;
     width: fit-content;
-    padding: 1rem 4rem;
+    padding: 1rem 5rem;
     font-size: 1.5rem;
     font-weight: 800;
     color: white;
@@ -215,6 +223,14 @@
 }
 
 @media (max-width: 426px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 8rem;
+  }
   .main h1 {
     background-color: #ff00006a;
     width: fit-content;

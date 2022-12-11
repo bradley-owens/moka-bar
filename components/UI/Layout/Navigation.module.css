@@ -46,15 +46,17 @@
   font-size: 1.3rem;
   color: #51d2cb;
   background-color: white;
-  border-radius: 30px;
+  border-radius: 5px;
+  letter-spacing: 1.5px;
   padding: 0.5rem 2.5rem;
   /* border: 2px solid rgba(255, 0, 0, 1); */
+  transition: 0.3s;
 }
 
 .menu:hover {
   cursor: pointer;
-  letter-spacing: 2px;
   transition: 0.3s;
+  border-radius: 100px;
 }
 
 @media (max-width: 1000px) {

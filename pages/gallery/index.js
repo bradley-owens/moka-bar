@@ -33,7 +33,7 @@ const Gallery = () => {
         <div className={styles.main}>
           <h1>Take a look at what we do</h1>
 
-          {width < 426 ? (
+          {width < 769 ? (
             <MobileGallery />
           ) : (
             <Fragment>

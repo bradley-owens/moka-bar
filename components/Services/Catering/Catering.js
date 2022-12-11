@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import img1 from "../../../public/catering1.png";
 import img2 from "../../../public/catering2.png";
 import styles from "./Catering.module.css";
@@ -54,7 +55,9 @@ const Catering = () => {
           whileInView="visible"
           variants={variantStyles}
         >
-          <button>See more!</button>
+          <Link href="/catering">
+            <button>See more!</button>
+          </Link>
         </motion.div>
       </div>
     </div>

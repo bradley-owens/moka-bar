@@ -92,12 +92,13 @@ const Catering = () => {
                       alt="catering-img"
                       width="2rem"
                     />
+
                     <h4>{item.name}</h4>
                     <p>
                       {`${item.sizes.small.size} ~ ${item.sizes.small.serves} ~ ${item.sizes.small.price}`}
                     </p>
                     <p>
-                      {`${item.sizes.medium.size}~${item.sizes.medium.serves}~${item.sizes.medium.price}`}
+                      {`${item.sizes.medium.size} ~ ${item.sizes.medium.serves} ~ ${item.sizes.medium.price}`}
                     </p>
                     <p>
                       {`${item.sizes.small.size} ~ ${item.sizes.small.serves} ~ ${item.sizes.small.price}`}
@@ -135,6 +136,7 @@ const Catering = () => {
                 >
                   <div className={styles.package}>
                     <Image />
+
                     <h4>{item.name}</h4>
                     <p>{item.description}</p>
                     <p>{item.price}</p>
