@@ -25,6 +25,10 @@
   margin-top: -1rem;
 }
 
+.main h2 {
+  font-style: italic;
+}
+
 .gallery-1 {
   display: grid;
   padding: 0 1.5rem;
@@ -195,15 +199,6 @@
     height: 100vh;
     background-color: rgb(246, 251, 255);
     padding-bottom: 2rem;
-  }
-  .gallery-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 180px 180px;
-    column-gap: 0.5rem;
-    row-gap: 0.5rem;
-
-    transition: opacity 1s ease-in-out;
   }
 }
 @media (max-width: 426px) {

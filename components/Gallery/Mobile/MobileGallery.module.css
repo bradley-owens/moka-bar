@@ -8,15 +8,15 @@
 .carousel {
   cursor: grab;
   overflow: hidden;
-  width: 100vw;
-  /* background-color: rgba(81, 210, 204, 0.467); */
+  width: 90vw;
+  background-color: rgba(81, 210, 204, 0.488);
+  border-radius: 40px;
 }
 
 .inner-carousel {
-  /* background-color: rgba(81, 210, 204, 0.467); */
   display: flex;
   gap: 1rem;
-  padding: 2rem 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .item {

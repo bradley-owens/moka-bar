@@ -6,11 +6,16 @@ import cakesImg from "../../public/galleryImages/catering.png";
 import fruitImg from "../../public/galleryImages/gallery2.png";
 import grazingImg from "../../public/galleryImages/gallery8.png";
 import Link from "next/link";
+import cakes from "../../public/galleryImages/cakes.jpg";
+import banana from "../../public/galleryImages/banana.jpg";
+import fruit from "../../public/galleryImages/fruit.jpg";
+import grazing from "../../public/galleryImages/grazing.jpg";
+import sandwhich from "../../public/galleryImages/sandwhich.jpg";
 
 const Catering = () => {
   const packages = [
     {
-      src: cakesImg,
+      src: cakes,
       name: "Assorted Cakes and Slices",
       sizes: {
         small: { size: "sml", serves: "Serves 4-6", price: "$40" },
@@ -19,7 +24,7 @@ const Catering = () => {
       },
     },
     {
-      src: fruitImg,
+      src: fruit,
       name: "Fruit Platters",
       sizes: {
         small: { size: "sml", serves: "Serves 4-6", price: "$35" },
@@ -28,7 +33,7 @@ const Catering = () => {
       },
     },
     {
-      src: grazingImg,
+      src: grazing,
       name: "Grazing Platters",
       sizes: {
         small: { size: "sml", serves: "Serves 4-6", price: "$55" },
@@ -40,11 +45,13 @@ const Catering = () => {
 
   const indivual = [
     {
+      src: banana,
       name: "Whole Banana Bread",
       description: "Freshly Made Banana Bread Loaf",
       price: "$25",
     },
     {
+      src: sandwhich,
       name: "Packed Lunch",
       description: "Consists Of Sandwich Or Baguette, Cake, Fruit and Popper",
       price: "$17.50",
@@ -135,7 +142,12 @@ const Catering = () => {
                   }}
                 >
                   <div className={styles.package}>
-                    <Image />
+                    <Image
+                      className={styles["package-img"]}
+                      src={item.src}
+                      alt="catering-img"
+                      width="2rem"
+                    />
 
                     <h4>{item.name}</h4>
                     <p>{item.description}</p>
