@@ -1,7 +1,6 @@
 .container {
   height: 100vh;
   width: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,7 +54,7 @@
   z-index: 999;
   background-color: #51d2cc;
   width: 70%;
-  margin: 0 auto;
+
   color: white;
   padding: 2rem;
   border-radius: 40px;

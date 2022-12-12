@@ -48,6 +48,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   font-style: italic;
+  text-align: center;
 }
 
 .main h4 {
@@ -93,7 +94,7 @@
 }
 
 .package-img {
-  width: 300px;
+  width: 100%;
   height: 200px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -116,4 +117,56 @@
   cursor: pointer;
   padding: 0.5rem 3.5rem;
   transition: 0.3s;
+}
+
+@media (max-width: 1005px) {
+  .package-grid {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .package-grid {
+    grid-template-columns: 300px;
+  }
+
+  .individual-grid {
+    grid-template-columns: 300px;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  .main h1 {
+    font-size: 1.5rem;
+  }
+
+  .main h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 458px) {
+  .main h1 {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+  }
+
+  .main h3 {
+    font-size: 1rem;
+  }
+
+  .main h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 325px) {
+  .main h1 {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
 }
