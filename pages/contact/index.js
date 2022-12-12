@@ -1,4 +1,5 @@
 import Map from "../../components/Contact/Map";
+import Footer from "../../components/Footer/Footer";
 import Layout from "../../components/UI/Layout/Layout";
 import styles from "./index.module.css";
 
@@ -20,6 +21,7 @@ const Contact = () => {
             <p> background-circle</p>
           </div>
         </div>
+        <Footer />
       </div>
     </Layout>
   );

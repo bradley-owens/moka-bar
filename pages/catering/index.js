@@ -11,6 +11,7 @@ import banana from "../../public/galleryImages/banana.jpg";
 import fruit from "../../public/galleryImages/fruit.jpg";
 import grazing from "../../public/galleryImages/grazing.jpg";
 import sandwhich from "../../public/galleryImages/sandwhich.jpg";
+import Footer from "../../components/Footer/Footer";
 
 const Catering = () => {
   const packages = [
@@ -53,7 +54,7 @@ const Catering = () => {
     {
       src: sandwhich,
       name: "Packed Lunch",
-      description: "Consists Of Sandwich Or Baguette, Cake, Fruit and Popper",
+      description: "Sandwich Or Baguette, Cake, Fruit and Popper",
       price: "$17.50",
     },
   ];
@@ -161,6 +162,7 @@ const Catering = () => {
             })}
           </div>
         </div>
+        <Footer />
       </div>
     </Layout>
   );

@@ -17,6 +17,7 @@ import Image from "next/image";
 import { useState, Fragment } from "react";
 import useDeviceSize from "../../components/Hooks/useDeviceSize";
 import MobileGallery from "../../components/Gallery/Mobile/MobileGallery";
+import Footer from "../../components/Footer/Footer";
 
 const Gallery = () => {
   const [width] = useDeviceSize();
@@ -99,7 +100,13 @@ const Gallery = () => {
               </div>
             </Fragment>
           )}
+
+          <div className={styles.x}>
+            <p> background-circle</p>
+          </div>
         </div>
+
+        <Footer />
       </div>
     </Layout>
   );

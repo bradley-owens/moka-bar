@@ -1,8 +1,11 @@
+.container {
+  height: max-content;
+  background-color: rgb(246, 251, 255);
+}
 .main {
   display: grid;
   justify-content: center;
   height: max-content;
-  background-color: rgb(246, 251, 255);
 }
 .menu {
   display: flex;
