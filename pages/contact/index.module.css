@@ -70,6 +70,15 @@
   visibility: hidden;
 }
 
+@media (max-width: 770px) {
+  .x {
+    left: -15rem;
+    bottom: 25rem;
+    width: 27rem;
+    height: 27rem;
+  }
+}
+
 @media (max-width: 440px) {
   .main h1 {
     padding: 1rem 2rem;
@@ -83,6 +92,13 @@
   }
   .info h3 {
     font-size: 1rem;
+  }
+
+  .x {
+    left: -15rem;
+    bottom: 28rem;
+    width: 20rem;
+    height: 20rem;
   }
 }
 
@@ -99,5 +115,12 @@
   }
   .info h3 {
     font-size: 0.9rem;
+  }
+
+  .x {
+    left: -16rem;
+    bottom: 28rem;
+    width: 20rem;
+    height: 20rem;
   }
 }

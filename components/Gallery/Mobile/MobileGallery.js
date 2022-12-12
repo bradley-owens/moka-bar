@@ -62,6 +62,12 @@ const MobileGallery = () => {
         className={styles.carousel}
         whileTap={{ cursor: "grabbing" }}
       >
+        <div className={styles.x}>
+          <p>x</p>
+        </div>
+        <div className={styles.y}>
+          <p>y</p>
+        </div>
         <motion.div
           className={styles["inner-carousel"]}
           drag="x"
@@ -82,25 +88,6 @@ const MobileGallery = () => {
           })}
         </motion.div>
       </motion.div>
-
-      {/* <div className={styles["switch-container"]}>
-    //     <Image
-    //       id="left"
-    //       onClick={switchImageHandler}
-    //       className={styles.switch}
-    //       src={switchBtnLeft}
-    //       alt="gallery-img"
-    //       width="2rem"
-    //     />
-    //     <Image
-    //       id="right"
-    //       onClick={switchImageHandler}
-    //       className={styles.switch}
-    //       src={switchBtnRight}
-    //       alt="gallery-img"
-    //       width="2rem"
-    //     />
-    //   </div> */}
     </div>
   );
 };
