@@ -44,7 +44,7 @@
 
   border-radius: 40px;
   z-index: 2;
-  background-color: rgba(81, 210, 204, 0.53);
+  /* background-color: rgba(81, 210, 204, 0.53); */
 }
 
 .inner-carousel {
