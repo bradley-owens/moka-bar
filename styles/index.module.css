@@ -5,8 +5,20 @@
   background-color: rgb(246, 251, 255);
 }
 
+@media (max-width: 769px) {
+  .container {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    gap: 0rem;
+  }
+}
+
 @media (max-width: 380px) {
   .container {
-    gap: 8rem;
+    gap: 3rem;
   }
 }
