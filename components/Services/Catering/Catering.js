@@ -5,9 +5,12 @@ import img2 from "../../../public/catering2.png";
 import styles from "./Catering.module.css";
 import { motion } from "framer-motion";
 import { CateringAnimationStyles } from "../../Hooks/AnimationsStyles/CateringAnimationStyles";
+import useDeviceSize from "../../Hooks/useDeviceSize";
+import { Fragment } from "react";
 
 const Catering = () => {
   const variantStyles = CateringAnimationStyles();
+  const [width] = useDeviceSize();
 
   return (
     <div className={styles.service}>
@@ -18,12 +21,16 @@ const Catering = () => {
       >
         <h1>Book our Catering</h1>
       </motion.div>
-      <div className={styles.x}>
-        <p> background-circle</p>
-      </div>
-      <div className={styles.y}>
-        <p> background-circle</p>
-      </div>
+      {width > 590 ? (
+        <Fragment>
+          <div className={styles.x}>
+            <p> background-circle</p>
+          </div>
+          <div className={styles.y}>
+            <p> background-circle</p>
+          </div>
+        </Fragment>
+      ) : null}
       <div className={styles.main}>
         <Image
           className={styles.img1}

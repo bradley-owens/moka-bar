@@ -465,6 +465,7 @@
     align-items: center;
     gap: 1.5rem;
     border-radius: 50px;
+    /* background-color: #51d2cc; */
   }
 
   .service h1 {
@@ -514,20 +515,20 @@
 
   .x {
     top: -1rem;
-    left: 6rem;
+    left: 15rem;
     margin-top: 18rem;
-    width: 9rem;
-    height: 9rem;
-    animation: x 50s linear infinite alternate;
+    width: 10rem;
+    height: 10rem;
+    /* animation: x 50s linear infinite alternate; */
   }
 
   .y {
     top: 20rem;
     left: -1rem;
     margin-top: -26rem;
-    width: 9rem;
-    height: 9rem;
-    animation: y 50s linear infinite alternate;
+    width: 10rem;
+    height: 10rem;
+    /* animation: y 50s linear infinite alternate; */
   }
 
   @keyframes x {
@@ -586,7 +587,7 @@
     margin-top: 18rem;
     width: 9rem;
     height: 9rem;
-    animation: x 50s linear infinite alternate;
+    /* animation: x 50s linear infinite alternate; */
   }
 
   .y {
@@ -595,7 +596,7 @@
     margin-top: -26rem;
     width: 9rem;
     height: 9rem;
-    animation: y 50s linear infinite alternate;
+    /* animation: y 50s linear infinite alternate; */
   }
 }
 

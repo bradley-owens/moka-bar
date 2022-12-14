@@ -45,12 +45,12 @@
 
 @media (max-width: 589px) {
   .container {
-    gap: 10rem;
+    gap: 5rem;
   }
 }
 
 @media (max-width: 322px) {
   .container {
-    gap: 13rem;
+    gap: 3rem;
   }
 }

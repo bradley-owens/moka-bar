@@ -5,20 +5,24 @@ import styles from "./Dine.module.css";
 import { motion } from "framer-motion";
 import { DiningAnimationStyles } from "../../Hooks/AnimationsStyles/DiningAnimationStyles";
 import Link from "next/link";
+import { Fragment } from "react";
+import useDeviceSize from "../../Hooks/useDeviceSize";
 
 const Dine = () => {
   const variantStyles = DiningAnimationStyles();
-
+  const [width] = useDeviceSize();
   return (
     <div className={styles.service}>
-      <div className={styles.x}>
-        <p> background-circle</p>
-      </div>
-
-      <div className={styles.y}>
-        <p> background-circle</p>
-      </div>
-
+      {width > 590 ? (
+        <Fragment>
+          <div className={styles.x}>
+            <p> background-circle</p>
+          </div>
+          <div className={styles.y}>
+            <p> background-circle</p>
+          </div>
+        </Fragment>
+      ) : null}
       <motion.div
         initial="hidden"
         whileInView="visible"
