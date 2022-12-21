@@ -4,9 +4,16 @@ import Link from "next/link";
 import styles from "./Navigation.module.css";
 import { motion } from "framer-motion";
 import useDeviceSize from "../../Hooks/useDeviceSize";
+import { useState } from "react";
 
 const Navigation = () => {
   const [width] = useDeviceSize();
+
+  const [navState, setNavState] = useState(false);
+
+  const toggleMobileNav = () => {
+    setNavState(!navState);
+  };
 
   return (
     <motion.div
@@ -19,34 +26,37 @@ const Navigation = () => {
     >
       {/* <Image className={styles.logo} src={logoImg} width="4rem" alt="logo" /> */}
       <h1>MOKA BAR</h1>
-
-      <ul>
+      <ul className={navState ? styles.open : styles["nav-links"]}>
         <li>
-          <Link href="/">Home</Link>
+          <Link className={styles.link} href="/">
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="/catering">Catering</Link>
+          <Link className={styles.link} href="/catering">
+            Catering
+          </Link>
         </li>
         <li>
-          <Link href="/gallery">Gallery</Link>
+          <Link className={styles.link} href="/gallery">
+            Gallery
+          </Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link className={styles.link} href="/contact">
+            Contact
+          </Link>
         </li>
-      </ul>
-      {width > 800 ? (
         <Link className={styles.menu} href="/menu">
           Menu
         </Link>
-      ) : (
-        <div>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
-          />
-          <span className="material-symbols-outlined">menu</span>
-        </div>
-      )}
+      </ul>
+
+      <div className={styles.hamburger} onClick={toggleMobileNav}>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+      </div>
     </motion.div>
   );
 };

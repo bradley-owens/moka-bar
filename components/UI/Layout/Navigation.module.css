@@ -13,10 +13,13 @@
   font-weight: bold;
 }
 
+.hamburger {
+  display: none;
+}
+
 .nav h1 {
   color: white;
-  /* font-size: 40px; */
-  /* -webkit-text-stroke: 1px rgba(255, 0, 0, 0.926); */
+
   font-size: 2rem;
 }
 
@@ -25,7 +28,7 @@
   height: 2rem;
 }
 
-.nav ul {
+.nav-links {
   display: flex;
   align-items: baseline;
   gap: 3rem;
@@ -33,7 +36,7 @@
   margin: 0;
   padding: 0;
 }
-.nav ul a {
+.link {
   text-decoration: none;
   font-size: 1.5rem;
   color: white;
@@ -64,16 +67,86 @@
     padding: 0 7%;
   }
 
-  .nav ul {
+  .nav-links {
     gap: 2rem;
   }
-  .nav ul a {
+  .link {
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 870px) {
-  .nav ul {
-    display: none;
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+  }
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 5px;
+  }
+
+  .nav-links {
+    position: fixed;
+    left: 0rem;
+    top: 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: #51d2cc;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+  }
+
+  .open {
+    list-style: none;
+
+    position: fixed;
+    left: 0rem;
+    top: 0rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: #51d2cc;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: all;
+    clip-path: circle(900px at 90% -10%);
+    -webkit-clip-path: circle(900px at 90% -10%);
+    transition: all 1s ease-out;
+  }
+
+  .link {
+    font-size: 1.8rem;
+  }
+
+  .menu {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #51d2cb;
+    background-color: white;
+    border-radius: 20px;
+    letter-spacing: 1.5px;
+    padding: 0.5rem 2.5rem;
+    /* border: 2px solid rgba(255, 0, 0, 1); */
+    transition: 0.3s;
+  }
+
+  .menu:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0.5rem 4rem;
+    border-radius: 20px;
   }
 }
