@@ -1,15 +1,20 @@
-.main {
-  position: relative;
+.container {
   height: 100vh;
   width: 100%;
-  /* background-color: aquamarine; */
+}
 
+.main {
+  position: relative;
 }
 
 .hero-img {
   position: absolute;
-  left: -6rem;
+  /* left: -6rem;
   bottom: -8rem;
+  width: 50rem;
+  height: 44rem; */
+  left: -4rem;
+  bottom: -57rem;
   width: 50rem;
   height: 44rem;
 }
@@ -73,8 +78,8 @@
 
 @media (max-width: 1370px) {
   .hero-img {
-    left: -6rem;
-    bottom: -6rem;
+    left: -4rem;
+    bottom: -55rem;
     width: 50rem;
     height: 45rem;
   }
@@ -104,8 +109,8 @@
 
 @media (max-width: 1114px) {
   .hero-img {
-    left: -6rem;
-    bottom: -6rem;
+    left: -4rem;
+    bottom: -55rem;
     width: 40rem;
     height: 45rem;
   }
@@ -129,8 +134,8 @@
 
 @media (max-width: 1053px) {
   .hero-img {
-    left: -6rem;
-    bottom: -9rem;
+    left: -4rem;
+    bottom: -55rem;
     width: 40rem;
     height: 43rem;
   }
@@ -160,8 +165,8 @@
   .hero-img {
     width: 40rem;
     height: 40rem;
-    left: -5rem;
-    bottom: -4rem;
+    left: -3rem;
+    bottom: -55rem;
   }
 
   .hero-logo {
@@ -187,8 +192,8 @@
   }
 
   .hero-img {
-    left: -2rem;
-    bottom: -7rem;
+    left: -4rem;
+    bottom: -50rem;
     width: 35rem;
     height: 35rem;
   }
@@ -214,7 +219,7 @@
 @media (max-width: 632px) {
   .hero-img {
     left: -4rem;
-    bottom: -7rem;
+    bottom: -50rem;
     width: 38rem;
     height: 38rem;
   }
@@ -236,7 +241,7 @@
 @media (max-width: 550px) {
   .hero-img {
     left: -4rem;
-    bottom: -5rem;
+    bottom: -50rem;
     width: 33rem;
     height: 33rem;
   }
@@ -258,7 +263,8 @@
 @media (max-width: 450px) {
   .hero-img {
     left: 2rem;
-    bottom: 5rem;
+    bottom: -38rem;
+
     width: 24rem;
     height: 24rem;
   }
@@ -280,7 +286,8 @@
 @media (max-width: 425px) {
   .hero-img {
     left: 1rem;
-    bottom: 5rem;
+    bottom: -38rem;
+
     width: 24rem;
     height: 24rem;
   }
@@ -302,7 +309,8 @@
 @media (max-width: 375px) {
   .hero-img {
     left: 0.5rem;
-    bottom: 4rem;
+    bottom: -38rem;
+
     width: 23rem;
     height: 25rem;
   }

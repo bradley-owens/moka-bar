@@ -10,7 +10,7 @@ import React, { useState, useEffect } from "react";
 const Hero = () => {
   return (
     <motion.div
-      className={styles.nav}
+      className={styles.container}
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
