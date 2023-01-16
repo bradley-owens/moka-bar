@@ -9,21 +9,17 @@
 
 .hero-img {
   position: absolute;
-  /* left: -6rem;
-  bottom: -8rem;
-  width: 50rem;
-  height: 44rem; */
   left: -4rem;
-  bottom: -57rem;
-  width: 50rem;
-  height: 44rem;
+  bottom: -70rem;
+  width: 63rem;
+  height: 57rem;
 }
 
 .hero-logo {
   position: absolute;
-  right: 7rem;
-  top: 11.5rem;
-  width: 35rem;
+  right: 9rem;
+  top: 17rem;
+  width: 45rem;
   height: 9rem;
   padding-bottom: 1rem;
   border-bottom: 5px solid #51d2cb;
@@ -31,7 +27,7 @@
 
 .info {
   background-color: #51d2cb;
-  padding: 2rem;
+  padding: 2rem 3rem;
   border-radius: 150px;
   position: absolute;
   text-align: center;
@@ -39,18 +35,18 @@
   flex-direction: column;
   gap: 1rem;
   right: 12rem;
-  top: 24rem;
+  top: 30rem;
 }
 
 .info h2 {
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   color: white;
 }
 
 .menu {
   position: absolute;
-  right: 22rem;
-  top: 37rem;
+  right: 27rem;
+  top: 45rem;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -76,28 +72,175 @@
   }
 }
 
-@media (max-width: 1370px) {
+/* @media (max-width: 1900px) {
+  .container {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .main {
+    position: relative;
+  }
+
+  .hero-img {
+    position: absolute;
+   
+    left: -4rem;
+    bottom: -57rem;
+    width: 50rem;
+    height: 44rem;
+  }
+
+  .hero-logo {
+    position: absolute;
+    right: 7rem;
+    top: 11.5rem;
+    width: 35rem;
+    height: 9rem;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid #51d2cb;
+  }
+
+  .info {
+    background-color: #51d2cb;
+    padding: 2rem;
+    border-radius: 150px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    right: 12rem;
+    top: 24rem;
+  }
+
+  .info h2 {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .menu {
+    position: absolute;
+    right: 22rem;
+    top: 37rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .scroll {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 0.9rem;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 0.5s;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(5px);
+    }
+  }
+} */
+
+@media (max-width: 1747px) {
   .hero-img {
     left: -4rem;
-    bottom: -55rem;
+    bottom: -70rem;
+    width: 55rem;
+    height: 54rem;
+  }
+
+  .hero-logo {
+    right: 5rem;
+    top: 17rem;
+    width: 45rem;
+    height: 9rem;
+  }
+
+  .info {
+    padding: 2rem 3rem;
+    gap: 1rem;
+    right: 9rem;
+    top: 30rem;
+  }
+
+  .menu {
+    right: 24rem;
+    top: 45rem;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1616px) {
+  .hero-img {
+    left: -4rem;
+    bottom: -65rem;
+    width: 54rem;
+    height: 52rem;
+  }
+
+  .hero-logo {
+    right: 5rem;
+    top: 15rem;
+    width: 40rem;
+    height: 9rem;
+  }
+
+  .info {
+    padding: 2rem 3rem;
+    gap: 1rem;
+    right: 8rem;
+    top: 28rem;
+  }
+
+  .info h2 {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .menu {
+    right: 22rem;
+    top: 45rem;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hero-img {
+    left: -4rem;
+    bottom: -58rem;
     width: 50rem;
     height: 45rem;
   }
 
   .hero-logo {
-    right: 3rem;
-    top: 10rem;
+    right: 6rem;
+    top: 13rem;
     width: 33rem;
     height: 10rem;
   }
   .info {
+    padding: 2rem 2.5rem;
+    border-radius: 150px;
     right: 8rem;
-    top: 23rem;
+    top: 27rem;
+  }
+
+  .info h2 {
+    font-size: 1.7rem;
+    color: white;
   }
 
   .menu {
-    right: 18rem;
-    top: 36rem;
+    right: 19rem;
+    top: 40rem;
   }
 }
 
