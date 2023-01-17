@@ -12,13 +12,24 @@
 }
 
 .service h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: white;
   background-color: rgba(255, 0, 0, 0.414);
   border-radius: 100px;
   width: fit-content;
-  padding: 1.5rem;
+  padding: 1.5rem 2.5rem;
+}
+
+.info {
+  font-size: 2.1rem;
+  background-color: rgba(255, 0, 0, 0.414);
+  font-weight: 600;
+  color: white;
+  width: 500px;
+  padding: 1.5rem 2.5rem;
+  line-height: 1.4;
+  border-radius: 40px;
 }
 
 .main button {
@@ -31,7 +42,7 @@
   color: white;
   font-weight: 700;
   border-radius: 40px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   transition: 0.3s;
 
   animation: wiggle 3s alternate infinite;
@@ -41,6 +52,7 @@
   cursor: pointer;
   padding: 1rem 3.5rem;
   transition: 0.3s;
+  animation: none;
 }
 
 @keyframes wiggle {
@@ -60,24 +72,14 @@
     transform: rotate(0deg);
   }
 }
-.info {
-  font-size: 2rem;
-  background-color: rgba(255, 0, 0, 0.414);
-  font-weight: 600;
-  color: white;
-  width: 500px;
-  padding: 1.5rem;
-  line-height: 1.4;
-  border-radius: 40px;
-}
 
 .img1 {
   position: absolute;
   z-index: 999;
-  top: 2.5rem;
-  left: 13rem;
-  width: 19rem;
-  height: 19rem;
+  top: 5rem;
+  left: 20rem;
+  width: 22rem;
+  height: 22rem;
   border-radius: 40px;
   border: 4px solid white;
 
@@ -87,10 +89,10 @@
 .img2 {
   z-index: -999;
   position: absolute;
-  top: 10rem;
-  left: 0rem;
-  width: 19rem;
-  height: 19rem;
+  top: 15rem;
+  left: 7rem;
+  width: 22rem;
+  height: 22rem;
   border-radius: 40px;
   border: 4px solid white;
   box-shadow: rgba(14, 30, 37, 0.32) 0px 4px 6px 0px,
@@ -99,14 +101,14 @@
 
 .x {
   position: absolute;
-  top: -3rem;
-  left: 15rem;
+  top: 5rem;
+  left: 22rem;
   margin-top: 18rem;
   position: absolute;
   z-index: -999;
   background-color: rgba(81, 210, 204, 0.53);
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 200px;
   /* box-shadow: rgba(14, 30, 37, 0.32) 0px 4px 6px 0px,
     rgba(14, 30, 37, 0.32) 0px 4px 18px 0px; */
@@ -118,14 +120,14 @@
 
 .y {
   position: absolute;
-  top: 21rem;
-  left: 0rem;
+  top: 24rem;
+  left: 5rem;
   margin-top: -24rem;
   position: absolute;
   z-index: -999;
   background-color: rgba(81, 210, 204, 0.53);
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 200px;
   /* box-shadow: rgba(14, 30, 37, 0.32) 0px 4px 6px 0px,
     rgba(14, 30, 37, 0.32) 0px 4px 18px 0px; */
@@ -135,14 +137,145 @@
   visibility: hidden;
 }
 
-@media (max-width: 1210px) {
+@media (max-width: 1600px) {
+  .service h1 {
+    font-size: 3rem;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .info {
+    font-size: 2rem;
+    width: 500px;
+    padding: 1.5rem 2.5rem;
+    line-height: 1.4;
+  }
+
+  .main button {
+    bottom: -6rem;
+    right: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  .img1 {
+    top: 5rem;
+    left: 18rem;
+    width: 19rem;
+    height: 19rem;
+  }
+  .img2 {
+    top: 15rem;
+    left: 7rem;
+    width: 19rem;
+    height: 19rem;
+  }
+
+  .x {
+    top: 2rem;
+    left: 22rem;
+    margin-top: 18rem;
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .y {
+    top: 26rem;
+    left: 5rem;
+    margin-top: -24rem;
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .service {
+    position: relative;
+    margin: 2rem auto;
+    width: 85%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4rem;
+    z-index: 1000;
+  }
+
+  .service h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.414);
+    border-radius: 100px;
+    width: fit-content;
+    padding: 1.5rem;
+  }
+
+  .main button {
+    position: absolute;
+    bottom: -6rem;
+    right: 1rem;
+    background-color: #51d2cc;
+    border: none;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+
+    animation: wiggle 3s alternate infinite;
+  }
+
+  .info {
+    font-size: 1.8rem;
+    background-color: rgba(255, 0, 0, 0.414);
+    font-weight: 600;
+    color: white;
+    width: 450px;
+    padding: 1.5rem;
+    line-height: 1.4;
+    border-radius: 40px;
+  }
+
+  .img1 {
+    top: 5rem;
+    left: 14rem;
+    width: 19rem;
+    height: 19rem;
+  }
+  .img2 {
+    top: 15rem;
+    left: 3rem;
+    width: 19rem;
+    height: 19rem;
+  }
+
+  .x {
+    top: 2rem;
+    left: 18rem;
+    margin-top: 18rem;
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .y {
+    top: 26rem;
+    left: 1rem;
+    margin-top: -24rem;
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
+@media (max-width: 1276px) {
   .service {
     gap: 4rem;
     z-index: 1000;
   }
 
   .service h1 {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     padding: 1.5rem;
   }
 
@@ -154,38 +287,39 @@
   }
 
   .info {
-    font-size: 1.8rem;
-    width: 40vw;
+    font-size: 1.5rem;
+    width: 35vw;
     padding: 1.5rem;
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
   .img1 {
-    top: 0rem;
-    left: 11rem;
-    width: 17rem;
-    height: 17rem;
+    top: 5rem;
+    left: 12rem;
+    width: 16rem;
+    height: 16rem;
   }
   .img2 {
-    top: 10rem;
-    left: 0rem;
-    width: 17rem;
-    height: 17rem;
+    top: 15rem;
+    left: 3rem;
+    width: 16rem;
+    height: 16rem;
   }
 
   .x {
-    top: -4rem;
-    left: 13rem;
-    width: 16rem;
-    height: 16rem;
+    top: 0rem;
+    left: 15rem;
+    margin-top: 18rem;
+    width: 15rem;
+    height: 15rem;
   }
 
   .y {
-    top: 22rem;
-    left: -1rem;
+    top: 26rem;
+    left: 2rem;
     margin-top: -24rem;
-    width: 16rem;
-    height: 16rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
@@ -214,32 +348,32 @@
   }
 
   .img1 {
-    top: 2rem;
+    top: 5rem;
     left: 10rem;
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
   }
   .img2 {
-    top: 12rem;
-    left: 0rem;
-    width: 15rem;
-    height: 15rem;
+    top: 15rem;
+    left: 3rem;
+    width: 14rem;
+    height: 14rem;
   }
 
   .x {
-    top: -4rem;
-    left: 9rem;
+    top: -1rem;
+    left: 13rem;
     margin-top: 18rem;
-    width: 17rem;
-    height: 17rem;
+    width: 13rem;
+    height: 13rem;
   }
 
   .y {
-    top: 25rem;
-    left: -2rem;
+    top: 31rem;
+    left: 0rem;
     margin-top: -26rem;
-    width: 17rem;
-    height: 17rem;
+    width: 13rem;
+    height: 13rem;
   }
 }
 
@@ -268,20 +402,20 @@
   }
 
   .img1 {
-    top: 4rem;
+    top: 7rem;
     left: 8rem;
     width: 13rem;
     height: 13rem;
   }
   .img2 {
-    top: 12rem;
+    top: 15rem;
     left: 0rem;
     width: 13rem;
     height: 13rem;
   }
 
   .x {
-    top: -4rem;
+    top: -1rem;
     left: 9rem;
     margin-top: 18rem;
     width: 13rem;
@@ -289,7 +423,7 @@
   }
 
   .y {
-    top: 27rem;
+    top: 30rem;
     left: -2rem;
     margin-top: -26rem;
     width: 13rem;
@@ -322,20 +456,20 @@
   }
 
   .img1 {
-    top: 6rem;
+    top: 9rem;
     left: 6rem;
     width: 12rem;
     height: 12rem;
   }
   .img2 {
-    top: 12rem;
+    top: 15rem;
     left: 0rem;
     width: 12rem;
     height: 12rem;
   }
 
   .x {
-    top: -4rem;
+    top: -1rem;
     left: 9rem;
     margin-top: 18rem;
     width: 11rem;
@@ -343,7 +477,7 @@
   }
 
   .y {
-    top: 30rem;
+    top: 33rem;
     left: -1rem;
     margin-top: -26rem;
     width: 11rem;
@@ -376,20 +510,20 @@
   }
 
   .img1 {
-    top: 6rem;
+    top: 9rem;
     left: 5rem;
     width: 10rem;
     height: 10rem;
   }
   .img2 {
-    top: 11rem;
+    top: 14rem;
     left: 0rem;
     width: 10rem;
     height: 10rem;
   }
 
   .x {
-    top: -4rem;
+    top: -1rem;
     left: 6rem;
     margin-top: 18rem;
     width: 10rem;
@@ -397,7 +531,7 @@
   }
 
   .y {
-    top: 30rem;
+    top: 33rem;
     left: -1rem;
     margin-top: -26rem;
     width: 10rem;
@@ -416,10 +550,10 @@
   }
 
   .main button {
-    bottom: -1.5rem;
-    right: 1rem;
-    padding: 1rem 1.5rem;
-    font-size: 1.1rem;
+    /* bottom: -1.5rem;
+    right: 1rem; */
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
   }
 
   .info {
@@ -430,20 +564,20 @@
   }
 
   .img1 {
-    top: 6rem;
+    top: 9rem;
     left: 5rem;
     width: 10rem;
     height: 10rem;
   }
   .img2 {
-    top: 11rem;
+    top: 14rem;
     left: 0rem;
     width: 10rem;
     height: 10rem;
   }
 
   .x {
-    top: -4rem;
+    top: -1rem;
     left: 6rem;
     margin-top: 18rem;
     width: 10rem;
@@ -451,7 +585,7 @@
   }
 
   .y {
-    top: 30rem;
+    top: 33rem;
     left: -1rem;
     margin-top: -26rem;
     width: 10rem;

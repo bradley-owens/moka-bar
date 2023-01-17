@@ -28,7 +28,7 @@ export function DiningAnimationStyles() {
         opacity: 0,
       },
       visible: {
-        x: -40,
+        x: -80,
         scale: 1,
         opacity: 1,
         transition: {

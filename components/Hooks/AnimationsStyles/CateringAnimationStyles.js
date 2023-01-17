@@ -22,12 +22,12 @@ export function CateringAnimationStyles() {
   } else if (width > 426) {
     return {
       hidden: {
-        x: -40,
+        x: -30,
         scale: 0.8,
         opacity: 0,
       },
       visible: {
-        x: 40,
+        x: 30,
         scale: 1,
         opacity: 1,
         transition: {
