@@ -232,9 +232,9 @@
 @media (max-width: 1053px) {
   .hero-img {
     left: -4rem;
-    bottom: -55rem;
-    width: 40rem;
-    height: 43rem;
+    bottom: -50rem;
+    width: 35rem;
+    height: 35rem;
   }
 
   .hero-logo {

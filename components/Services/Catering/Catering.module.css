@@ -11,18 +11,30 @@
 }
 
 .service h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
   color: white;
-  background-color: #51d2cc;
+  background-color: rgba(255, 0, 0, 0.414);
   border-radius: 100px;
   width: fit-content;
-  padding: 1.7rem;
+  padding: 1.5rem 2.5rem;
+}
+
+.info {
+  font-size: 2.1rem;
+  background-color: #51d2cc;
+  font-weight: 600;
+
+  color: white;
+  width: 500px;
+  padding: 1.5rem 2.5rem;
+  line-height: 1.4;
+  border-radius: 40px;
 }
 
 .main button {
   position: absolute;
-  bottom: -7rem;
+  bottom: -6rem;
   left: 1rem;
   background-color: rgba(255, 0, 0, 0.414);
   border: none;
@@ -30,7 +42,7 @@
   color: white;
   font-weight: 700;
   border-radius: 40px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   transition: 0.3s;
   animation: wiggle 3s alternate infinite;
 }
@@ -58,24 +70,12 @@
   }
 }
 
-.info {
-  font-size: 2rem;
-  background-color: #51d2cc;
-  font-weight: 600;
-
-  color: white;
-  width: 500px;
-  padding: 1.5rem;
-  line-height: 1.4;
-  border-radius: 40px;
-}
-
 .img1 {
   position: absolute;
   z-index: 2;
-  top: 0rem;
-  right: 13rem;
-  width: 19rem;
+  top: 5rem;
+  right: 20rem;
+  width: 22rem;
   border-radius: 40px;
   border: 4px solid white;
   box-shadow: rgba(14, 30, 37, 0.32) 0px 4px 6px 0px,
@@ -84,9 +84,9 @@
 .img2 {
   z-index: 1;
   position: absolute;
-  top: 11rem;
-  right: 2rem;
-  width: 19rem;
+  top: 15rem;
+  right: 7rem;
+  width: 22rem;
   border-radius: 40px;
   border: 4px solid white;
   box-shadow: rgba(14, 30, 37, 0.32) 0px 4px 6px 0px,
@@ -95,16 +95,15 @@
 
 .x {
   position: absolute;
-  top: -1rem;
-  right: 15rem;
+  top: 5rem;
+  right: 22rem;
   margin-top: 18rem;
   position: absolute;
   z-index: 1;
   background-color: rgba(255, 0, 0, 0.414);
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 200px;
-  /* animation: x 50s linear infinite alternate; */
 }
 
 .x p {
@@ -113,42 +112,24 @@
 
 .y {
   position: absolute;
-  top: 29rem;
-  right: -1rem;
-  margin-top: -30rem;
+  top: 24rem;
+  right: 5rem;
+  margin-top: -24rem;
   position: absolute;
   z-index: 1;
   background-color: rgba(255, 0, 0, 0.414);
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 200px;
-  /* animation: y 20s linear infinite alternate; */
 }
 
 .y p {
   visibility: hidden;
 }
 
-@keyframes x {
-  100% {
-    transform: translateX(15vw);
-  }
-}
-
-@keyframes y {
-  100% {
-    transform: translateX(15vw);
-  }
-}
-
-@media (max-width: 1210px) {
-  .service {
-    gap: 4rem;
-    z-index: 1000;
-  }
-
+@media (max-width: 1440px) {
   .service h1 {
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     padding: 1.5rem;
   }
 
@@ -161,38 +142,97 @@
 
   .info {
     font-size: 1.8rem;
-    width: 40vw;
+    width: 450px;
     padding: 1.5rem;
-    line-height: 1.4;
   }
 
   .img1 {
+    top: 5rem;
+    right: 14rem;
+    width: 19rem;
+  }
+
+  .img2 {
+    top: 15rem;
+    right: 3rem;
+    width: 19rem;
+  }
+
+  .x {
+    position: absolute;
     top: 2rem;
-    right: 10rem;
+    right: 18rem;
+    margin-top: 18rem;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 0, 0, 0.414);
+    width: 17rem;
+    height: 17rem;
+    border-radius: 200px;
+    /* animation: x 50s linear infinite alternate; */
+  }
+
+  .y {
+    top: 26rem;
+    right: 1rem;
+    margin-top: -24rem;
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
+@media (max-width: 1210px) {
+  .service {
+    gap: 4rem;
+    z-index: 1000;
+  }
+
+  .service h1 {
+    font-size: 2.3rem;
+    padding: 1.5rem;
+  }
+
+  .main button {
+    bottom: -5.5rem;
+    left: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .info {
+    font-size: 1.5rem;
+    width: 35vw;
+    padding: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .img1 {
+    top: 5rem;
+    right: 12rem;
     width: 16rem;
     height: 16rem;
   }
   .img2 {
-    top: 12rem;
-    right: 0rem;
+    top: 15rem;
+    right: 3rem;
     width: 16rem;
     height: 16rem;
   }
 
   .x {
-    top: -3rem;
-    right: 9rem;
+    top: 0rem;
+    right: 15rem;
     margin-top: 18rem;
-    width: 17rem;
-    height: 17rem;
+    width: 15rem;
+    height: 15rem;
   }
 
   .y {
-    top: 25rem;
-    right: -2rem;
-    margin-top: -26rem;
-    width: 17rem;
-    height: 17rem;
+    top: 26rem;
+    right: 2rem;
+    margin-top: -24rem;
+    width: 15rem;
+    height: 15rem;
   }
 }
 
@@ -207,7 +247,7 @@
   }
 
   .main button {
-    bottom: -5rem;
+    bottom: -6rem;
     left: 1rem;
     padding: 1rem 1.5rem;
     font-size: 1.5rem;
@@ -221,32 +261,32 @@
   }
 
   .img1 {
-    top: 2rem;
+    top: 5rem;
     right: 10rem;
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
   }
   .img2 {
-    top: 12rem;
-    right: 0rem;
-    width: 15rem;
-    height: 15rem;
+    top: 15rem;
+    right: 3rem;
+    width: 14rem;
+    height: 14rem;
   }
 
   .x {
-    top: -4rem;
-    right: 9rem;
+    top: -1rem;
+    right: 13rem;
     margin-top: 18rem;
-    width: 17rem;
-    height: 17rem;
+    width: 13rem;
+    height: 13rem;
   }
 
   .y {
-    top: 25rem;
-    right: -2rem;
+    top: 31rem;
+    right: 0rem;
     margin-top: -26rem;
-    width: 17rem;
-    height: 17rem;
+    width: 13rem;
+    height: 13rem;
   }
 }
 
@@ -261,7 +301,7 @@
   }
 
   .main button {
-    bottom: -4rem;
+    bottom: -5rem;
     left: 1rem;
     padding: 1rem 1.5rem;
     font-size: 1.3rem;
@@ -275,20 +315,20 @@
   }
 
   .img1 {
-    top: 4rem;
+    top: 7rem;
     right: 8rem;
     width: 13rem;
     height: 13rem;
   }
   .img2 {
-    top: 12rem;
+    top: 15em;
     right: 0rem;
     width: 13rem;
     height: 13rem;
   }
 
   .x {
-    top: -4rem;
+    top: -1rem;
     right: 9rem;
     margin-top: 18rem;
     width: 13rem;
@@ -296,7 +336,7 @@
   }
 
   .y {
-    top: 27rem;
+    top: 30rem;
     right: -2rem;
     margin-top: -26rem;
     width: 13rem;
@@ -358,57 +398,57 @@
   }
 }
 
-@media (max-width: 764px) {
+@media (max-width: 768px) {
   .service {
-    gap: 2rem;
+    width: 80%;
+    align-items: center;
+    gap: 1.5rem;
+    border-radius: 50px;
+    /* background-color: #51d2cc; */
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
   }
 
   .service h1 {
-    font-size: 1.5rem;
-    padding: 1.5rem;
-  }
-
-  .main button {
-    bottom: -4.5rem;
-    left: 1rem;
-    padding: 1rem 1.5rem;
-    font-size: 1.1rem;
+    font-size: 2.5rem;
+    padding: 1.5rem 2rem;
   }
 
   .info {
-    font-size: 1rem;
-    width: 35vw;
-    padding: 1.5rem;
-    line-height: 1.3;
+    text-align: center;
+    font-size: 1.7rem;
+    width: 60vw;
+    padding: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .main button {
+    position: unset;
+    bottom: -3rem;
+    right: 8.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
   }
 
   .img1 {
+    display: none;
     top: 6rem;
-    right: 5rem;
-    width: 10rem;
-    height: 10rem;
+    left: 5rem;
+    width: 9rem;
+    height: 9rem;
   }
   .img2 {
+    display: none;
+
     top: 11rem;
-    right: 0rem;
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .x {
-    top: -4rem;
-    right: 6rem;
-    margin-top: 18rem;
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .y {
-    top: 30rem;
-    right: -1rem;
-    margin-top: -26rem;
-    width: 10rem;
-    height: 10rem;
+    left: 0rem;
+    width: 9rem;
+    height: 9rem;
   }
 }
 
