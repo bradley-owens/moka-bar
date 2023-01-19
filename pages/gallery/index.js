@@ -19,7 +19,6 @@ const Gallery = () => {
             <p> background-circle</p>
           </div>
         </div>
-
         <Footer />
       </div>
     </Layout>

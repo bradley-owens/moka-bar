@@ -321,6 +321,15 @@
   }
 }
 
+@media (max-width: 770px) {
+  .hero-logo {
+    right: 9rem;
+    top: 8rem;
+    width: 32rem;
+    height: 6rem;
+    padding-bottom: 1rem;
+  }
+}
 @media (max-width: 632px) {
   .hero-img {
     left: -4rem;

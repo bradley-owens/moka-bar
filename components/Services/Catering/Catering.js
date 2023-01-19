@@ -21,7 +21,7 @@ const Catering = () => {
       >
         <h1>Book our Catering</h1>
       </motion.div>
-      {width >= 768 ? (
+      {width >= 770 ? (
         <Fragment>
           <div className={styles.x}>
             <p> background-circle</p>
