@@ -3,6 +3,7 @@ import beansImg from "../../../public/3.png";
 import mugsImg from "../../../public/mug.png";
 import styles from "./Merchandise.module.css";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Merchandise = () => {
   const animationStylesTitle = {
@@ -61,7 +62,9 @@ const Merchandise = () => {
               Thats right we're with Green Caffeine! Stop in and grab a coffee
               with a GC resuseable mug.
             </p>
-            <button>See more</button>
+            <Link href="/menu">
+              <button>See more</button>
+            </Link>
           </div>
         </motion.div>
 
@@ -82,7 +85,9 @@ const Merchandise = () => {
               Love our coffee? Why stop there? We offer bags of our delicious
               beans right here at Moka Bar.
             </p>
-            <button>See more</button>
+            <Link href="/menu">
+              <button>See more</button>
+            </Link>
           </div>
         </motion.div>
       </div>
