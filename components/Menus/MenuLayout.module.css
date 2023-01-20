@@ -78,6 +78,37 @@
   /* margin-left: 2rem; */
 }
 
+@media (max-width: 500px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .menu-4 {
+    grid-template-columns: 1fr;
+    column-gap: 2.5rem;
+    row-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .menu-3 {
+    grid-template-columns: 1fr;
+    column-gap: 2.5rem;
+    row-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .menu-2 {
+    grid-template-columns: 1fr;
+    column-gap: 2.5rem;
+    row-gap: 2rem;
+    padding: 2rem;
+  }
+
+  .type h2 {
+    font-size: 2.1rem;
+  }
+}
+
 @media (max-width: 426px) {
   .container {
     padding: 1rem;
@@ -108,5 +139,3 @@
     font-size: 1.8rem;
   }
 }
-
-
