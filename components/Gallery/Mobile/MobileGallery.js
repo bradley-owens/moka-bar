@@ -33,27 +33,12 @@ const carouselImages = [
 ];
 
 const MobileGallery = () => {
-  // const [imageSrcState, setImageSrcState] = useState(5);
-  // const switchImageHandler = (e) => {
-  //   const direction = e.target.id;
-  //   if (imageSrcState === 11) {
-  //     setImageSrcState(0);
-  //   } else if (imageSrcState === 1) {
-  //     setImageSrcState(10);
-  //   } else if (direction === "left") {
-  //     setImageSrcState(imageSrcState - 1);
-  //   } else {
-  //     setImageSrcState(imageSrcState + 1);
-  //   }
-  //   console.log(imageSrcState);
-  // };
-
   const [width, setWidth] = useState(0);
   const carousel = useRef();
 
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, []);
+  }, [width]);
 
   return (
     <div className={styles.container}>
