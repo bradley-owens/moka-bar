@@ -16,7 +16,7 @@ export function DiningAnimationStyles() {
         scale: 1,
         opacity: 1,
         transition: {
-          delay: 0.3,
+          delay: 0.2,
         },
       },
     };
@@ -32,7 +32,7 @@ export function DiningAnimationStyles() {
         scale: 1,
         opacity: 1,
         transition: {
-          delay: 0.3,
+          delay: 0.2,
         },
       },
     };

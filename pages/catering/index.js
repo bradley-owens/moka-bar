@@ -88,7 +88,7 @@ const Catering = () => {
                       scale: 1,
                       opacity: 1,
                       transition: {
-                        delay: 0.3,
+                        delay: 0.2,
                       },
                     },
                   }}
@@ -137,7 +137,7 @@ const Catering = () => {
                       scale: 1,
                       opacity: 1,
                       transition: {
-                        delay: 0.3,
+                        delay: 0.2,
                       },
                     },
                   }}
