@@ -167,7 +167,7 @@ const ColdDrinksMenu = () => {
       </div>
 
       <div className={styles.type}>
-        <h2>Milkshakes / ThickShakes</h2>
+        <h2>Milk/Thick shakes</h2>
         <div className={styles["menu-4"]}>
           {coldDrinks.shakes.map((item) => {
             return (

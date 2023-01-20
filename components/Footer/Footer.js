@@ -7,8 +7,8 @@ const Footer = () => {
       <div>
         <p>Moka Bar</p>
         <p>Food and Beverage</p>
-        <p> 52 Picton Crescent</p>
-        <p>0428835477</p>
+        <p>14-88 McGregor Rd, Smithfield</p>
+        <p>0478055734</p>
       </div>
 
       <ul>
