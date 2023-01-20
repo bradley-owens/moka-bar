@@ -3,7 +3,7 @@ import useDeviceSize from "../useDeviceSize";
 export function CateringAnimationStyles() {
   const [width] = useDeviceSize();
 
-  if (width > 768) {
+  if (width > 900) {
     return {
       hidden: {
         x: -30,

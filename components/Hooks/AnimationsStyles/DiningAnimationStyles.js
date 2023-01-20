@@ -4,7 +4,7 @@ export function DiningAnimationStyles() {
   const [width] = useDeviceSize();
   console.log(width);
 
-  if (width > 768) {
+  if (width > 900) {
     return {
       hidden: {
         x: 40,

@@ -427,7 +427,7 @@
   }
 }
 
-@media (max-width: 859px) {
+/* @media (max-width: 859px) {
   .service {
     gap: 2rem;
   }
@@ -479,9 +479,9 @@
     width: 11rem;
     height: 11rem;
   }
-}
+} */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .service {
     width: 80%;
     align-items: center;

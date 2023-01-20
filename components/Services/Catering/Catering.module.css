@@ -344,61 +344,7 @@
   }
 }
 
-@media (max-width: 859px) {
-  .service {
-    gap: 2rem;
-  }
-
-  .service h1 {
-    font-size: 1.9rem;
-    padding: 1.5rem;
-  }
-
-  .main button {
-    bottom: -4.5rem;
-    left: 1rem;
-    padding: 1rem 1.5rem;
-    font-size: 1.3rem;
-  }
-
-  .info {
-    font-size: 1.1rem;
-    width: 35vw;
-    padding: 1.5rem;
-    line-height: 1.3;
-  }
-
-  .img1 {
-    top: 6rem;
-    right: 6rem;
-    width: 12rem;
-    height: 12rem;
-  }
-  .img2 {
-    top: 12rem;
-    right: 0rem;
-    width: 12rem;
-    height: 12rem;
-  }
-
-  .x {
-    top: -4rem;
-    right: 9rem;
-    margin-top: 18rem;
-    width: 11rem;
-    height: 11rem;
-  }
-
-  .y {
-    top: 30rem;
-    right: -1rem;
-    margin-top: -26rem;
-    width: 11rem;
-    height: 11rem;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .service {
     width: 80%;
     align-items: center;
