@@ -34,8 +34,8 @@ const Hero = () => {
         />
 
         <div className={styles.info}>
-          <h2>52 Picton Crescent, Narangba</h2>
-          <h2>0428-835-477</h2>
+          <h2>Building E5 14-88 McGregor Rd, Smithfield. 4878</h2>
+          <h2>0478-055-734</h2>
         </div>
 
         <div className={styles.menu}>

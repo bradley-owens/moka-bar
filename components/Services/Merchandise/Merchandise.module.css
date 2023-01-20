@@ -79,6 +79,10 @@
     gap: 0rem;
     align-items: center;
   }
+
+  .card {
+    width: 30vw;
+  }
 }
 
 @media (max-width: 1245px) {
