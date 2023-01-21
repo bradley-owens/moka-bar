@@ -14,7 +14,7 @@ const Gallery = () => {
       <div className={styles.container}>
         <div className={styles.main}>
           <h1>Take a look at what we do</h1>
-          {width < 800 ? <MobileGallery /> : <DesktopGallery />}
+          {width <= 900 ? <MobileGallery /> : <DesktopGallery />}
           <div className={styles.x}>
             <p> background-circle</p>
           </div>

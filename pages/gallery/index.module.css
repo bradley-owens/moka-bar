@@ -47,7 +47,7 @@
   visibility: hidden;
 }
 
-@media (max-width: 795px) {
+@media (max-width: 900px) {
   .container {
     justify-content: center;
     height: max-content;

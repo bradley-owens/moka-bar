@@ -43,10 +43,10 @@ const Map = () => {
         }}
       >
         <GoogleMap mapContainerStyle={mapStyle} center={center} zoom={zoom}>
-          <Marker
+          {/* <Marker
             position={center}
             icon={"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"}
-          ></Marker>
+          ></Marker> */}
         </GoogleMap>
       </motion.div>
     )
