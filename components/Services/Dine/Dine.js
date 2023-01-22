@@ -13,7 +13,7 @@ const Dine = () => {
   const [width] = useDeviceSize();
   return (
     <div className={styles.service}>
-      {width >= 900 ? (
+      {width >= 1000 ? (
         <Fragment>
           <div className={styles.x}>
             <p> background-circle</p>

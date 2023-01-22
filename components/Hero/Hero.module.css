@@ -390,137 +390,92 @@
 }
 
 @media (max-width: 450px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+  }
   .hero-img {
-    left: 2rem;
-    bottom: -38rem;
-
+    position: unset;
     width: 24rem;
     height: 24rem;
   }
 
   .hero-logo {
-    right: 4rem;
-    top: 8rem;
+    position: unset;
     width: 21rem;
     height: 5rem;
     padding-bottom: 1rem;
   }
 
   .menu {
-    right: 12rem;
-    top: 38.5rem;
+    position: unset;
   }
 }
 
 @media (max-width: 425px) {
   .hero-img {
-    left: 1rem;
-    bottom: -38rem;
-
     width: 24rem;
     height: 24rem;
   }
 
   .hero-logo {
-    right: 3rem;
-    top: 8rem;
     width: 21rem;
     height: 5rem;
     padding-bottom: 1rem;
-  }
-
-  .menu {
-    right: 11rem;
-    top: 38.5rem;
   }
 }
 
 @media (max-width: 399px) {
   .hero-img {
-    left: 1rem;
-    bottom: -37rem;
     width: 22rem;
     height: 23rem;
   }
 
   .hero-logo {
-    right: 2.5rem;
-    top: 8rem;
     width: 20rem;
     height: 5rem;
     padding-bottom: 1rem;
-  }
-
-  .menu {
-    right: 9.7rem;
-    top: 39rem;
   }
 }
 
 @media (max-width: 375px) {
   .hero-img {
-    left: 1rem;
-    bottom: -37rem;
-
     width: 21rem;
     height: 23rem;
   }
 
   .hero-logo {
-    right: 1.5rem;
-    top: 8rem;
     width: 20rem;
     height: 5rem;
     padding-bottom: 1rem;
-  }
-
-  .menu {
-    right: 9.5rem;
-    top: 39rem;
   }
 }
 
 @media (max-width: 355px) {
   .hero-img {
-    left: 1.5rem;
-    bottom: -34rem;
-
     width: 19rem;
     height: 21rem;
   }
 
   .hero-logo {
-    right: 2.5rem;
-    top: 8rem;
     width: 17.5rem;
     height: 4.5rem;
     padding-bottom: 1rem;
-  }
-
-  .menu {
-    right: 9rem;
-    top: 35.5rem;
   }
 }
 
 @media (max-width: 320px) {
   .hero-img {
-    left: 1rem;
-    bottom: -35rem;
     width: 19rem;
     height: 19rem;
   }
 
   .hero-logo {
-    right: 1rem;
-    top: 9rem;
     width: 18rem;
     height: 5rem;
     padding-bottom: 1rem;
-  }
-
-  .menu {
-    right: 8rem;
-    top: 38rem;
   }
 }

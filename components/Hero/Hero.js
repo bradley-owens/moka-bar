@@ -20,17 +20,16 @@ const Hero = () => {
     >
       <div className={styles.main}>
         <Image
-          className={styles["hero-img"]}
-          src={heroImg}
-          alt="hero-img"
-          width="10rem"
-        />
-
-        <Image
           className={styles["hero-logo"]}
           src={logo}
           alt="hero-logo"
           width="5rem"
+        />
+        <Image
+          className={styles["hero-img"]}
+          src={heroImg}
+          alt="hero-img"
+          width="10rem"
         />
 
         <div className={styles.info}>
