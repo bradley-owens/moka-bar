@@ -63,6 +63,11 @@
   animation-duration: 0.5s;
 }
 
+.link {
+  color: white;
+  text-decoration: none;
+}
+
 @keyframes bounce {
   from {
     transform: translateY(0px);
