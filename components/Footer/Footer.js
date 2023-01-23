@@ -8,7 +8,7 @@ const Footer = () => {
         <p>Moka Bar</p>
         <p>Food and Beverage</p>
         <p className={styles.link}>14-88 McGregor Rd, Smithfield</p>
-        <p className={styles.link}>0478055734</p>
+        <p className={styles.link}>0478-055-734</p>
       </div>
 
       <ul>

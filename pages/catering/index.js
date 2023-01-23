@@ -109,7 +109,7 @@ const Catering = () => {
                       {`${item.sizes.medium.size} ~ ${item.sizes.medium.serves} ~ ${item.sizes.medium.price}`}
                     </p>
                     <p>
-                      {`${item.sizes.small.size} ~ ${item.sizes.small.serves} ~ ${item.sizes.small.price}`}
+                      {`${item.sizes.large.size} ~ ${item.sizes.large.serves} ~ ${item.sizes.large.price}`}
                     </p>
                     <Link href="/contact">
                       <button>Order Now</button>
