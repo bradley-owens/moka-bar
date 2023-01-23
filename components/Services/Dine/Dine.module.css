@@ -133,6 +133,28 @@
   visibility: hidden;
 }
 
+@media (min-height: 2200px) and (max-height: 2750px) {
+  .service {
+    height: 20vh;
+  }
+}
+@media (min-height: 2000px) and (max-height: 2200px) {
+  .service {
+    height: 25vh;
+  }
+}
+@media (min-height: 1700px) and (max-height: 2000px) {
+  .service {
+    height: 30vh;
+  }
+}
+
+@media (min-height: 1300px) and (max-height: 1700px) {
+  .service {
+    height: 35vh;
+  }
+}
+
 @media (max-width: 1600px) {
   .service h1 {
     font-size: 3rem;

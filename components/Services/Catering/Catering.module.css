@@ -127,6 +127,78 @@
   visibility: hidden;
 }
 
+@media (min-height: 2200px) and (max-height: 2750px) {
+  .service {
+    height: 20vh;
+  }
+}
+@media (min-height: 2000px) and (max-height: 2200px) {
+  .service {
+    height: 25vh;
+  }
+}
+@media (min-height: 1700px) and (max-height: 2000px) {
+  .service {
+    height: 30vh;
+  }
+}
+
+@media (min-height: 1300px) and (max-height: 1700px) {
+  .service {
+    height: 35vh;
+  }
+}
+
+@media (max-width: 1600px) {
+  .service h1 {
+    font-size: 3rem;
+    padding: 1.5rem 2.5rem;
+  }
+
+  .info {
+    font-size: 2rem;
+    width: 500px;
+    padding: 1.5rem 2.5rem;
+    line-height: 1.4;
+  }
+
+  .main button {
+    bottom: -6rem;
+    left: 1rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  .img1 {
+    top: 5rem;
+    right: 18rem;
+    width: 19rem;
+    height: 19rem;
+  }
+  .img2 {
+    top: 15rem;
+    right: 7rem;
+    width: 19rem;
+    height: 19rem;
+  }
+
+  .x {
+    top: 2rem;
+    right: 22rem;
+    margin-top: 18rem;
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .y {
+    top: 26rem;
+    right: 5rem;
+    margin-top: -24rem;
+    width: 17rem;
+    height: 17rem;
+  }
+}
+
 @media (max-width: 1440px) {
   .service h1 {
     font-size: 2.8rem;
