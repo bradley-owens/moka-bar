@@ -41,6 +41,7 @@
 .info h2 {
   font-size: 1.8rem;
   color: white;
+  text-decoration: none;
 }
 
 .menu {
@@ -61,11 +62,6 @@
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-duration: 0.5s;
-}
-
-.link {
-  color: white;
-  text-decoration: none;
 }
 
 @keyframes bounce {
