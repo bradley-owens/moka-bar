@@ -103,7 +103,12 @@
 /* ////////////////////////////////////////////////////////////////////////////////////////// 
 /* //////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media (min-height: 2250px) and (max-height: 2800px) {
+@media (min-height: 2600px) and (max-height: 3000px) {
+  .container {
+    height: 30vh;
+  }
+}
+@media (min-height: 2250px) and (max-height: 2600px) {
   .container {
     height: 35vh;
   }

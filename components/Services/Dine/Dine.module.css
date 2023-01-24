@@ -133,9 +133,10 @@
   visibility: hidden;
 }
 
-@media (min-height: 2200px) and (max-height: 2750px) {
+@media (min-height: 2200px) and (max-height: 3000px) {
   .service {
     height: 20vh;
+    gap: 0rem;
   }
 }
 @media (min-height: 2000px) and (max-height: 2200px) {
