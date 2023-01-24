@@ -10,7 +10,7 @@ const Story = () => {
         <p> background-circle</p>
       </div>
       <div className={styles.y}>
-        <p> background-circle</p>
+        <p>background-circle</p>
       </div>
       <div className={styles.main}>
         <div className={styles.header}>
@@ -18,10 +18,11 @@ const Story = () => {
         </div>
         <div className={styles.body}>
           <p>
-            Moka Bar is an independent coffee roaster and eatery. We pride
-            ourselves on the coffee that is roasted by us each week as we seek
-            to deliver to our customers, the most beautiful and wondrous
-            flavours imaginable.
+            MoKa Bar is a locally owned café in the heart of the JCU Campus.
+            Open 5 days a week, MoKa Bar strives to serve the very best
+            including a range of homemade goodies and locally roasted coffee
+            provided by Sipping Duck. We also provide catering for local
+            business and residents, which can be tailored for your requirements.
           </p>
           <Image
             className={styles["story-img"]}
