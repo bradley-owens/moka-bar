@@ -21,7 +21,7 @@ const Catering = () => {
       sizes: {
         small: { size: "sml", serves: "Serves 4-6", price: "$40" },
         medium: { size: "med", serves: "Serves 7-10", price: "$65" },
-        large: { size: "large", serves: "Serves 7-10", price: "$65 " },
+        large: { size: "large", serves: "Serves 20+", price: "$130+ " },
       },
     },
     {
@@ -30,7 +30,7 @@ const Catering = () => {
       sizes: {
         small: { size: "sml", serves: "Serves 4-6", price: "$35" },
         medium: { size: "med", serves: "Serves 7-10", price: "$55" },
-        large: { size: "large", serves: "Serves 7-10", price: "$95 " },
+        large: { size: "large", serves: "Serves 20+", price: "$95 " },
       },
     },
     {
@@ -39,7 +39,7 @@ const Catering = () => {
       sizes: {
         small: { size: "sml", serves: "Serves 4-6", price: "$55" },
         medium: { size: "med", serves: "Serves 7-10", price: "$90" },
-        large: { size: "large", serves: "Serves 7-10", price: "$160 " },
+        large: { size: "large", serves: "Serves 20+", price: "$160+" },
       },
     },
   ];
